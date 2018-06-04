@@ -11,3 +11,8 @@ task :default do
   `git commit -m "-- Site build --"`
   `git push`
 end
+
+task :build do
+  a = App.new("summaries.yml", "template.html")
+  a.render_and_save("docs/index.html")
+end
