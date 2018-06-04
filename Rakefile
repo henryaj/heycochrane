@@ -5,5 +5,5 @@ require 'app'
 
 task :default do
   a = App.new("summaries.yml", "template.html")
-  a.render_and_save("foo.html")
+  a.render_and_save("docs/index.html")
 end
