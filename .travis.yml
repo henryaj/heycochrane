@@ -1,5 +1,6 @@
+---
 before_install:
-- "eval $(ssh-agent); ssh-add <("$GIT_PRIVATE_KEY")"
+- "eval $(ssh-agent); ssh-add <(\"$GIT_PRIVATE_KEY\")"
 
 branches:
   only:
