@@ -1,0 +1,8 @@
+h1 {
+  font-family: 'Lobster Two';
+}
+
+hr {
+	border-top: 1px dashed #8c8b8b;
+	border-bottom: 1px dashed #fff;
+}

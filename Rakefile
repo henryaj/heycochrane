@@ -4,7 +4,7 @@ $:.unshift(folder)
 require 'app'
 
 task :default do
-  a = App.new("summaries.yml", "template.html")
+  a = App.new("summaries.yml", "template.haml")
   a.render_and_save("docs/index.html")
 
   `git add docs`
@@ -13,6 +13,6 @@ task :default do
 end
 
 task :build do
-  a = App.new("summaries.yml", "template.html")
+  a = App.new("summaries.yml", "template.haml")
   a.render_and_save("docs/index.html")
 end

@@ -1,7 +1,7 @@
-require 'erb'
+require 'haml'
 
 class Renderer
-  attr_reader :template
+  attr_reader :template, :summaries
 
   def initialize(args)
     @template = args.fetch(:template)
@@ -9,6 +9,8 @@ class Renderer
   end
 
   def render(options = {})
-    ERB.new(template).result(binding)
+
+    engine = Haml::Engine.new(template)
+    engine.render(Object.new, {summaries: @summaries})
   end
 end
