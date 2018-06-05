@@ -8,25 +8,31 @@
   answer: No.
   url: http://www.cochrane.org/CD012230/BACK_paracetamol-low-back-pain
 
+- question: Do nicotine replacements (gum, sprays, etc.) help when quitting smoking?
+  answer: Yes.
+  url: http://www.cochrane.org/news/featured-review-nicotine-replacement-therapy-versus-control-smoking-cessation
+  notes: |
+    All forms of nicotine replacement therapy are effective, and they increase the rate of long-term quitting by approximately 50% to 60% in those smoking 15 cigarettes a day or more.
+
 - question: Should I wear a bicycle helmet?
   answer: Yes.
   url: http://www.cochrane.org/CD001855/INJ_wearing-a-helmet-dramatically-reduces-the-risk-of-head-and-facial-injuries-for-bicyclists-involved-in-a-crash-even-if-it-involves-a-motor-vehicle
   notes: |
     Wearing a helmet dramatically reduces the risk of injury to your head and face if you're in an accident.
 
-- question: Do antidepressants work better than placebo for treating depression?
+- question: Do antidepressants work better than placebo?
   answer: Yes.
   url: http://www.cochrane.org/CD007954/DEPRESSN_antidepressants-versus-placebo-for-depression-in-primary-care
   notes: |
     SSRI and tricyclic antidepressants work better than placebo when treating depression.
 
-- question: Should people take statins preventatively (even if they haven't been diagnosed with heart disease)?
-  answer: Probably.
-  url: http://www.cochrane.org/CD004816/VASC_statins-primary-prevention-cardiovascular-disease
+- question: Will taking antioxidants before/after exercise stop me getting sore?
+  answer: No.
+  url: http://www.cochrane.org/news/featured-review-antioxidants-preventing-and-reducing-muscle-soreness-after-exercise
   notes: |
-    Even in patients without evidence of cardiovascular disease, statins reduce all-cause mortality without causing any serious harm.
+    Antioxidant supplementation may make a very small difference, but it's likely to be so small as to be undetectable.
 
-- question: Is cannabis (marijuana) helpful for neuropathic pain?
+- question: Is cannabis helpful for neuropathic pain?
   answer: No.
   url: http://cochranelibrary-wiley.com/doi/10.1002/14651858.CD012182.pub2/abstract
   notes: |
