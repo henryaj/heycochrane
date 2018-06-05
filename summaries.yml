@@ -1,5 +1,33 @@
-- question: "Does Vitamin C help with colds?"
-  answer: "No."
-  url: "http://cochranelibrary-wiley.com/doi/10.1002/14651858.CD000980.pub4/abstract"
+- question: Does Vitamin C help with colds?
+  answer: Partly, yes.
+  url: http://cochranelibrary-wiley.com/doi/10.1002/14651858.CD000980.pub4/abstract
   notes: |
-    Regular supplementation seems to modestly shorten how long your cold is, but it doesn't make you less likely to get sick in the first place.
+    Regular supplementation seems to shorten how long your cold is, but it doesn't make you less likely to get sick in the first place.
+
+- question: Does paracetamol help with lower back pain?
+  answer: No.
+  url: http://www.cochrane.org/CD012230/BACK_paracetamol-low-back-pain
+
+- question: Should I wear a bicycle helmet?
+  answer: Yes.
+  url: http://www.cochrane.org/CD001855/INJ_wearing-a-helmet-dramatically-reduces-the-risk-of-head-and-facial-injuries-for-bicyclists-involved-in-a-crash-even-if-it-involves-a-motor-vehicle
+  notes: |
+    Wearing a helmet dramatically reduces the risk of injury to your head and face if you're in an accident.
+
+- question: Do antidepressants work better than placebo for treating depression?
+  answer: Yes.
+  url: http://www.cochrane.org/CD007954/DEPRESSN_antidepressants-versus-placebo-for-depression-in-primary-care
+  notes: |
+    SSRI and tricyclic antidepressants work better than placebo when treating depression.
+
+- question: Should people take statins preventatively (even if they haven't been diagnosed with heart disease)?
+  answer: Probably.
+  url: http://www.cochrane.org/CD004816/VASC_statins-primary-prevention-cardiovascular-disease
+  notes: |
+    Even in patients without evidence of cardiovascular disease, statins reduce all-cause mortality without causing any serious harm.
+
+- question: Is cannabis (marijuana) helpful for neuropathic pain?
+  answer: No.
+  url: http://cochranelibrary-wiley.com/doi/10.1002/14651858.CD012182.pub2/abstract
+  notes: |
+    There is a lack of good evidence that any cannabis-derived product works for any chronic neuropathic pain.
