@@ -4,9 +4,11 @@
   notes: |
     Regular supplementation seems to shorten how long your cold is, but it doesn't make you less likely to get sick in the first place.
 
-- question: Does paracetamol help with lower back pain?
+- question: Does paracetamol (acetaminophen) help with lower back pain?
   answer: No.
   url: http://www.cochrane.org/CD012230/BACK_paracetamol-low-back-pain
+  notes: |
+    There's no evidence that paracetamol works better than placebo to treat acute or chronic back pain.
 
 - question: Do nicotine replacements (gum, sprays, etc.) help when quitting smoking?
   answer: Yes.
