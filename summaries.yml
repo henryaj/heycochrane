@@ -1,3 +1,27 @@
+
+
+- question: Does caffeine improve symptoms of asthma?
+  answer: Yes, mildly.
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001112.pub2/full
+  notes: Caffeine is a bronchodilator, and can modestly improve airway function for up to four hours in people with asthma. People taking a lung function test should avoid caffeine for at least four hours beforehand.
+
+- question: Does quarantine work to prevent the spread of viruses?
+  answer: Yes.
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013574/epdf/full
+  notes: |
+    Studies simulating the spread of disease show that quarantine reduces the number of people with the disease by 44–81% and the number of deaths by 31–63%. 
+
+- question: Do corticosteroids help people with acute respiratory distress syndrome?
+  answer: Maybe.
+  url: https://www.cochranelibrary.com/cca/doi/10.1002/cca.2682/full
+  notes: |
+    There is some limited evidence that all-cause mortality in ARDS patients is reduced by corticosteroids. 
+
+- question: Does gabapentin help with neuropathic pain?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD007938/SYMPT_gabapentin-chronic-neuropathic-pain-adults
+  notes: Gabapentin improves neuropathic pain in adults suffering from severe pain after singles or due to diabetes.
+
 - question: Does Vitamin C help with colds?
   answer: Partly, yes.
   url: http://cochranelibrary-wiley.com/doi/10.1002/14651858.CD000980.pub4/abstract
