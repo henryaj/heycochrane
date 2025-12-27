@@ -6,7 +6,10 @@ Given this Cochrane review summary, provide:
    - Medium scores (4-6): Useful findings but expected, moderate relevance
    - Low scores (1-3): Uncertain findings, rare conditions, highly specialized/technical
 
-2. tags: Array of tags from the ALLOWED TAGS list below (use kebab-case exactly as shown)
+2. date: The publication date of the Cochrane review in YYYY-MM-DD format.
+   Look for the review publication date on the Cochrane page. If not available, omit this field.
+
+3. tags: Array of tags from the ALLOWED TAGS list below (use kebab-case exactly as shown)
    Include:
    - 1-2 condition tags (specific AND/OR broad as appropriate)
    - 1 intervention tag
@@ -27,4 +30,4 @@ Answer: {answer}
 Notes: {notes}
 
 Respond ONLY with valid JSON:
-{"interest": 7, "tags": ["depression", "mental-health", "supplements", "myth-buster"]}
+{"interest": 7, "date": "2023-05-15", "tags": ["depression", "mental-health", "supplements", "myth-buster"]}
