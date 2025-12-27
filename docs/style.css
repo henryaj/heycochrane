@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+h1.display-1 {
+  font-family: 'Geist', sans-serif;
+}
+
 hr {
 	border-top: 1px dashed #8c8b8b;
 	border-bottom: 1px dashed #fff;
