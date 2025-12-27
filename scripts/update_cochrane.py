@@ -225,7 +225,10 @@ def call_claude(prompt: str, max_tokens: int = 500) -> Optional[str]:
 
 
 def summarize_review(plain_language_summary: str) -> Optional[dict]:
-    """Use Claude to generate question/answer/notes from Plain Language Summary."""
+    """Use Claude to generate question/answer/notes from Plain Language Summary.
+
+    Returns None if the review should be skipped (e.g., protocol without results).
+    """
     with open(SUMMARIZE_PROMPT_PATH, 'r') as f:
         prompt_template = f.read()
 
@@ -239,7 +242,12 @@ def summarize_review(plain_language_summary: str) -> Optional[dict]:
         # Extract JSON from response
         json_match = re.search(r'\{[^{}]*\}', response, re.DOTALL)
         if json_match:
-            return json.loads(json_match.group())
+            result = json.loads(json_match.group())
+            # Check if Claude indicated this should be skipped
+            if result.get('skip'):
+                logger.info(f"Skipping review: {result.get('reason', 'no results')}")
+                return None
+            return result
     except json.JSONDecodeError as e:
         logger.error(f"Failed to parse summary JSON: {e}")
 
