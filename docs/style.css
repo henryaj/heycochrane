@@ -33,12 +33,6 @@ hr {
   font-size: 1.5rem;
 }
 
-.summary-item h2 .badge {
-  font-size: 0.8rem;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-
 .summary-item p {
   color: #555;
 }

@@ -68,9 +68,6 @@
       let currentSort = 'default';
 
       function renderSummary(s) {
-        const interestBadge = s.interest ?
-          `<span class="badge badge-${getInterestBadgeClass(s.interest)}" title="Interest score: ${s.interest}/10">${s.interest}</span>` : '';
-
         const tagBadges = (s.tags || []).map(tag => {
           const meta = tagMetadata[tag] || { name: tag };
           return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="addTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
@@ -80,7 +77,7 @@
           <div class="row summary-item">
             <div class="col-md-9 col-sm-12">
               <div>
-                <h2>${interestBadge} ${escapeHtml(s.question)}</h2>
+                <h2>${escapeHtml(s.question)}</h2>
               </div>
             </div>
             <div class="col-md-3 col-sm-12">
@@ -101,12 +98,6 @@
         `;
       }
 
-      function getInterestBadgeClass(score) {
-        if (score >= 8) return 'success';
-        if (score >= 6) return 'info';
-        if (score >= 4) return 'warning';
-        return 'secondary';
-      }
 
       function escapeHtml(text) {
         const div = document.createElement('div');
