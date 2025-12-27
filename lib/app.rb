@@ -1,5 +1,5 @@
-require 'renderer'
-require 'summary'
+require_relative 'renderer'
+require_relative 'summary'
 
 class App
   attr_reader :summaries_path, :template_path
