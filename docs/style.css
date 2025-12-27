@@ -1,12 +1,87 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Geist', sans-serif;
 }
 
-h1 {
-  font-family: 'Lobster Two';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
 }
 
 hr {
 	border-top: 1px dashed #8c8b8b;
 	border-bottom: 1px dashed #fff;
+}
+
+.search-box {
+  max-width: 500px;
+}
+
+#search-input {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+}
+
+#result-count {
+  font-size: 0.9rem;
+}
+
+.pagination {
+  flex-wrap: wrap;
+}
+
+.summary-item h2 {
+  font-size: 1.5rem;
+}
+
+.summary-item h2 .badge {
+  font-size: 0.8rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.summary-item p {
+  color: #555;
+}
+
+.tags-container {
+  margin-top: 0.5rem;
+}
+
+.tag-badge {
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.tag-badge:hover {
+  background-color: #e9ecef;
+}
+
+#tag-buttons {
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.tag-filter-btn:hover {
+  background-color: #6c757d !important;
+  color: white !important;
+}
+
+.filter-chip {
+  font-size: 0.85rem;
+  padding: 0.4em 0.6em;
+}
+
+#clear-all-btn {
+  font-size: 0.8rem;
+}
+
+.sort-options {
+  font-size: 0.9rem;
+}
+
+.sort-options select {
+  font-size: 0.85rem;
 }

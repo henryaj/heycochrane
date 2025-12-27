@@ -1,0 +1,372 @@
+# Condition tags (broad)
+mental-health:
+  name: "Mental Health"
+  description: "Depression, anxiety, and other psychological conditions"
+
+chronic-pain:
+  name: "Chronic Pain"
+  description: "Long-term pain conditions including back pain, arthritis, fibromyalgia"
+
+cancer:
+  name: "Cancer"
+  description: "Cancer prevention, treatment, and survivorship"
+
+heart-disease:
+  name: "Heart Disease"
+  description: "Cardiovascular conditions including heart attacks, heart failure, arrhythmias"
+
+respiratory:
+  name: "Respiratory"
+  description: "Lung and breathing conditions including asthma, COPD, pneumonia"
+
+digestive:
+  name: "Digestive"
+  description: "Gastrointestinal conditions including IBS, ulcers, Crohn's disease"
+
+skin:
+  name: "Skin"
+  description: "Dermatological conditions including eczema, psoriasis, acne"
+
+bones-joints:
+  name: "Bones & Joints"
+  description: "Musculoskeletal conditions including osteoporosis, fractures, joint problems"
+
+brain-nerves:
+  name: "Brain & Nerves"
+  description: "Neurological conditions including stroke, dementia, Parkinson's, epilepsy"
+
+infection:
+  name: "Infection"
+  description: "Bacterial, viral, and other infectious diseases"
+
+diabetes:
+  name: "Diabetes"
+  description: "Type 1, type 2 diabetes and related metabolic conditions"
+
+kidney:
+  name: "Kidney"
+  description: "Kidney disease, dialysis, and renal conditions"
+
+liver:
+  name: "Liver"
+  description: "Liver disease including hepatitis, cirrhosis, fatty liver"
+
+blood:
+  name: "Blood"
+  description: "Blood disorders including anemia, clotting disorders, transfusions"
+
+eye:
+  name: "Eye"
+  description: "Vision and eye conditions including cataracts, glaucoma, macular degeneration"
+
+ent:
+  name: "Ear, Nose & Throat"
+  description: "ENT conditions including hearing loss, sinusitis, tonsillitis"
+
+# Condition tags (specific)
+depression:
+  name: "Depression"
+  description: "Major depressive disorder and related mood conditions"
+
+anxiety:
+  name: "Anxiety"
+  description: "Anxiety disorders including generalized anxiety, panic disorder"
+
+ptsd:
+  name: "PTSD"
+  description: "Post-traumatic stress disorder"
+
+schizophrenia:
+  name: "Schizophrenia"
+  description: "Schizophrenia and related psychotic disorders"
+
+bipolar:
+  name: "Bipolar"
+  description: "Bipolar disorder and mood cycling conditions"
+
+ocd:
+  name: "OCD"
+  description: "Obsessive-compulsive disorder"
+
+adhd:
+  name: "ADHD"
+  description: "Attention deficit hyperactivity disorder"
+
+autism:
+  name: "Autism"
+  description: "Autism spectrum disorder"
+
+back-pain:
+  name: "Back Pain"
+  description: "Lower back pain, sciatica, and spinal conditions"
+
+arthritis:
+  name: "Arthritis"
+  description: "Osteoarthritis, rheumatoid arthritis, and joint inflammation"
+
+fibromyalgia:
+  name: "Fibromyalgia"
+  description: "Chronic widespread pain and fatigue syndrome"
+
+headache:
+  name: "Headache"
+  description: "Tension headaches and general head pain"
+
+migraine:
+  name: "Migraine"
+  description: "Migraine headaches with or without aura"
+
+asthma:
+  name: "Asthma"
+  description: "Chronic respiratory condition with airway inflammation"
+
+copd:
+  name: "COPD"
+  description: "Chronic obstructive pulmonary disease"
+
+cough:
+  name: "Cough"
+  description: "Acute and chronic cough"
+
+cold:
+  name: "Cold"
+  description: "Common cold and upper respiratory infections"
+
+flu:
+  name: "Flu"
+  description: "Influenza and flu-like illnesses"
+
+pneumonia:
+  name: "Pneumonia"
+  description: "Lung infection and inflammation"
+
+sleep-apnea:
+  name: "Sleep Apnea"
+  description: "Obstructive and central sleep apnea"
+
+ibs:
+  name: "IBS"
+  description: "Irritable bowel syndrome"
+
+ulcer:
+  name: "Ulcer"
+  description: "Stomach and duodenal ulcers"
+
+nausea:
+  name: "Nausea"
+  description: "Nausea and vomiting"
+
+constipation:
+  name: "Constipation"
+  description: "Chronic constipation and bowel irregularity"
+
+crohns:
+  name: "Crohn's"
+  description: "Crohn's disease and inflammatory bowel disease"
+
+stroke:
+  name: "Stroke"
+  description: "Stroke prevention, treatment, and recovery"
+
+dementia:
+  name: "Dementia"
+  description: "Cognitive decline and dementia syndromes"
+
+alzheimers:
+  name: "Alzheimer's"
+  description: "Alzheimer's disease"
+
+parkinsons:
+  name: "Parkinson's"
+  description: "Parkinson's disease"
+
+multiple-sclerosis:
+  name: "Multiple Sclerosis"
+  description: "MS and demyelinating diseases"
+
+epilepsy:
+  name: "Epilepsy"
+  description: "Seizure disorders"
+
+high-blood-pressure:
+  name: "High Blood Pressure"
+  description: "Hypertension"
+
+heart-failure:
+  name: "Heart Failure"
+  description: "Congestive heart failure"
+
+cholesterol:
+  name: "Cholesterol"
+  description: "High cholesterol and lipid disorders"
+
+afib:
+  name: "AFib"
+  description: "Atrial fibrillation"
+
+eczema:
+  name: "Eczema"
+  description: "Atopic dermatitis and eczema"
+
+psoriasis:
+  name: "Psoriasis"
+  description: "Psoriasis and psoriatic conditions"
+
+acne:
+  name: "Acne"
+  description: "Acne vulgaris"
+
+wound-healing:
+  name: "Wound Healing"
+  description: "Wound care and healing"
+
+osteoporosis:
+  name: "Osteoporosis"
+  description: "Bone density loss"
+
+fracture:
+  name: "Fracture"
+  description: "Bone fractures and breaks"
+
+hiv:
+  name: "HIV"
+  description: "HIV/AIDS"
+
+tuberculosis:
+  name: "Tuberculosis"
+  description: "TB infection"
+
+malaria:
+  name: "Malaria"
+  description: "Malaria prevention and treatment"
+
+hepatitis:
+  name: "Hepatitis"
+  description: "Viral hepatitis (A, B, C)"
+
+# Intervention tags
+supplements:
+  name: "Supplements"
+  description: "Vitamins, minerals, herbs, and dietary supplements"
+
+vitamins:
+  name: "Vitamins"
+  description: "Vitamin supplementation"
+
+herbs:
+  name: "Herbs"
+  description: "Herbal remedies and botanical medicine"
+
+exercise:
+  name: "Exercise"
+  description: "Physical activity and exercise interventions"
+
+diet:
+  name: "Diet"
+  description: "Dietary interventions and nutrition"
+
+weight-loss:
+  name: "Weight Loss"
+  description: "Weight management and obesity treatment"
+
+lifestyle:
+  name: "Lifestyle"
+  description: "Lifestyle modifications and behavioral changes"
+
+medication:
+  name: "Medication"
+  description: "Pharmaceutical drug treatments"
+
+antibiotics:
+  name: "Antibiotics"
+  description: "Antibiotic treatments"
+
+painkillers:
+  name: "Painkillers"
+  description: "Pain relief medications"
+
+antidepressants:
+  name: "Antidepressants"
+  description: "Antidepressant medications"
+
+surgery:
+  name: "Surgery"
+  description: "Surgical interventions"
+
+procedure:
+  name: "Procedure"
+  description: "Medical procedures and interventions"
+
+therapy:
+  name: "Therapy"
+  description: "Therapeutic interventions including psychotherapy"
+
+cbt:
+  name: "CBT"
+  description: "Cognitive behavioral therapy"
+
+physiotherapy:
+  name: "Physiotherapy"
+  description: "Physical therapy and rehabilitation"
+
+alternative-medicine:
+  name: "Alternative Medicine"
+  description: "Complementary and alternative treatments"
+
+acupuncture:
+  name: "Acupuncture"
+  description: "Acupuncture treatment"
+
+homeopathy:
+  name: "Homeopathy"
+  description: "Homeopathic treatments"
+
+chiropractic:
+  name: "Chiropractic"
+  description: "Chiropractic manipulation and treatment"
+
+vaccine:
+  name: "Vaccine"
+  description: "Vaccination and immunization"
+
+screening:
+  name: "Screening"
+  description: "Health screening and early detection"
+
+prevention:
+  name: "Prevention"
+  description: "Disease prevention strategies"
+
+# Audience/context tags
+general-health:
+  name: "General Health"
+  description: "Relevant to healthy adults and general wellness"
+
+pregnancy:
+  name: "Pregnancy"
+  description: "Pregnancy-related interventions and conditions"
+
+childbirth:
+  name: "Childbirth"
+  description: "Labor, delivery, and postpartum care"
+
+children:
+  name: "Children"
+  description: "Pediatric conditions and child health"
+
+elderly:
+  name: "Elderly"
+  description: "Geriatric conditions and elderly care"
+
+smoking:
+  name: "Smoking"
+  description: "Smoking cessation and tobacco-related"
+
+alcohol:
+  name: "Alcohol"
+  description: "Alcohol use and addiction"
+
+# Special tags
+myth-buster:
+  name: "Myth Buster"
+  description: "Findings that challenge popular beliefs or common practices"

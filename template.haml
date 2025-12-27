@@ -4,7 +4,7 @@
     %title Hey, Cochrane... 🤔
 
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :crossorigin => "anonymous"}
-    %link{:href => "https://fonts.googleapis.com/css?family=Lobster+Two:400i|Roboto:400,400i", :rel => "stylesheet"}
+    %link{:href => "https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Geist:wght@400;500&display=swap", :rel => "stylesheet"}
     %link{:rel => "stylesheet", :href => "style.css"}
 
   %body
@@ -23,20 +23,30 @@
               %a{:href => "http://cochrane.org"} Cochrane reviews
               – which are as close to medical "truth" as exists.
 
-      - summaries.each do |s|
-        .row
-          .col-md-9.col-sm-12
-            %div
-              %h2= s.question
-          .col-md-3.col-sm-12
-            %h3
-              %a{:href => s.url}
-                =s.answer
-          .col-md-9.col-sm-12
-            %p= s.notes
-        .row
-          .col-md-12
-            %hr
+      .row.mb-4
+        .col-12
+          .search-box
+            %input#search-input.form-control{:type => "text", :placeholder => "Search questions... (e.g., 'vitamin', 'cancer', 'exercise')"}
+          .mt-2.d-flex.justify-content-between.align-items-center
+            %span#result-count.text-muted
+            .sort-options
+              %label.mr-2 Sort by:
+              %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
+                %option{:value => "default"} Default
+                %option{:value => "interest"} Most Interesting
+
+      .row.mb-3#tag-filter-section
+        .col-12
+          %div#tag-buttons.mb-2
+          %div#active-filters.d-flex.flex-wrap.align-items-center
+            %span#clear-all-btn.badge.badge-secondary.mr-2{:style => "cursor: pointer; display: none;"} Clear all
+
+      #summaries-container
+
+      .row.mt-4#pagination-container
+        .col-12.d-flex.justify-content-center
+          %nav{"aria-label" => "Page navigation"}
+            %ul#pagination.pagination
 
       .footer
         .row
@@ -45,4 +55,265 @@
               Definitely not to be construed as medical advice • Not affiliated with Cochrane • by
               %a{:href => "http://henrystanley.com"} Henry Stanley
 
+    %script{:src => "https://code.jquery.com/jquery-3.2.1.slim.min.js", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :crossorigin => "anonymous"}
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :crossorigin => "anonymous" }
+
+    :javascript
+      const allSummaries = #{summaries_json};
+      const tagMetadata = #{tag_metadata_json};
+      const ITEMS_PER_PAGE = 20;
+      let currentPage = 1;
+      let filteredSummaries = allSummaries;
+      let selectedTags = [];
+      let currentSort = 'default';
+
+      function renderSummary(s) {
+        const interestBadge = s.interest ?
+          `<span class="badge badge-${getInterestBadgeClass(s.interest)}" title="Interest score: ${s.interest}/10">${s.interest}</span>` : '';
+
+        const tagBadges = (s.tags || []).map(tag => {
+          const meta = tagMetadata[tag] || { name: tag };
+          return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="addTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
+        }).join('');
+
+        return `
+          <div class="row summary-item">
+            <div class="col-md-9 col-sm-12">
+              <div>
+                <h2>${interestBadge} ${escapeHtml(s.question)}</h2>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <h3>
+                <a href="${escapeHtml(s.url)}">${escapeHtml(s.answer)}</a>
+              </h3>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <p>${escapeHtml(s.notes)}</p>
+              <div class="tags-container">${tagBadges}</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+            </div>
+          </div>
+        `;
+      }
+
+      function getInterestBadgeClass(score) {
+        if (score >= 8) return 'success';
+        if (score >= 6) return 'info';
+        if (score >= 4) return 'warning';
+        return 'secondary';
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function renderPage() {
+        const container = document.getElementById('summaries-container');
+        const start = (currentPage - 1) * ITEMS_PER_PAGE;
+        const end = start + ITEMS_PER_PAGE;
+        const pageItems = filteredSummaries.slice(start, end);
+
+        container.innerHTML = pageItems.map(renderSummary).join('');
+        renderPagination();
+        updateResultCount();
+      }
+
+      function renderPagination() {
+        const totalPages = Math.ceil(filteredSummaries.length / ITEMS_PER_PAGE);
+        const pagination = document.getElementById('pagination');
+
+        if (totalPages <= 1) {
+          pagination.innerHTML = '';
+          return;
+        }
+
+        let html = '';
+
+        // Previous button
+        html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+          <a class="page-link" href="#" onclick="goToPage(${currentPage - 1}); return false;">Previous</a>
+        </li>`;
+
+        // Page numbers
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
+
+        if (startPage > 1) {
+          html += `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1); return false;">1</a></li>`;
+          if (startPage > 2) {
+            html += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
+          }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+          html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+            <a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>
+          </li>`;
+        }
+
+        if (endPage < totalPages) {
+          if (endPage < totalPages - 1) {
+            html += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
+          }
+          html += `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(${totalPages}); return false;">${totalPages}</a></li>`;
+        }
+
+        // Next button
+        html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+          <a class="page-link" href="#" onclick="goToPage(${currentPage + 1}); return false;">Next</a>
+        </li>`;
+
+        pagination.innerHTML = html;
+      }
+
+      function goToPage(page) {
+        const totalPages = Math.ceil(filteredSummaries.length / ITEMS_PER_PAGE);
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        renderPage();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function updateResultCount() {
+        const countEl = document.getElementById('result-count');
+        const searchInput = document.getElementById('search-input');
+        if (searchInput.value.trim()) {
+          countEl.textContent = `Found ${filteredSummaries.length} results`;
+        } else {
+          countEl.textContent = `${allSummaries.length} Cochrane reviews`;
+        }
+      }
+
+      function applyFilters() {
+        const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+        // Start with all summaries
+        let results = allSummaries;
+
+        // Apply text search
+        if (query) {
+          results = results.filter(s =>
+            s.question.toLowerCase().includes(query) ||
+            (s.notes && s.notes.toLowerCase().includes(query)) ||
+            s.answer.toLowerCase().includes(query)
+          );
+        }
+
+        // Apply tag filters (AND logic)
+        if (selectedTags.length > 0) {
+          results = results.filter(s =>
+            selectedTags.every(tag => (s.tags || []).includes(tag))
+          );
+        }
+
+        // Apply sort
+        if (currentSort === 'interest') {
+          results = [...results].sort((a, b) => (b.interest || 0) - (a.interest || 0));
+        }
+
+        filteredSummaries = results;
+        currentPage = 1;
+        renderPage();
+      }
+
+      function search(query) {
+        applyFilters();
+      }
+
+      function addTagFilter(tag) {
+        if (!selectedTags.includes(tag)) {
+          selectedTags.push(tag);
+          renderActiveFilters();
+          applyFilters();
+        }
+      }
+
+      function removeTagFilter(tag) {
+        selectedTags = selectedTags.filter(t => t !== tag);
+        renderActiveFilters();
+        applyFilters();
+      }
+
+      function clearAllFilters() {
+        selectedTags = [];
+        renderActiveFilters();
+        applyFilters();
+      }
+
+      function renderActiveFilters() {
+        const container = document.getElementById('active-filters');
+        const clearBtn = document.getElementById('clear-all-btn');
+
+        // Remove existing filter chips (but keep clear button)
+        const existingChips = container.querySelectorAll('.filter-chip');
+        existingChips.forEach(chip => chip.remove());
+
+        if (selectedTags.length === 0) {
+          clearBtn.style.display = 'none';
+          return;
+        }
+
+        clearBtn.style.display = 'inline-block';
+
+        selectedTags.forEach(tag => {
+          const meta = tagMetadata[tag] || { name: tag };
+          const chip = document.createElement('span');
+          chip.className = 'badge badge-primary filter-chip mr-1 mb-1';
+          chip.style.cursor = 'pointer';
+          chip.innerHTML = `${escapeHtml(meta.name)} <span class="ml-1" style="font-weight: bold;">&times;</span>`;
+          chip.onclick = () => removeTagFilter(tag);
+          container.appendChild(chip);
+        });
+      }
+
+      function renderTagButtons() {
+        const container = document.getElementById('tag-buttons');
+        const usedTags = new Set();
+
+        // Collect all tags used in summaries
+        allSummaries.forEach(s => {
+          (s.tags || []).forEach(tag => usedTags.add(tag));
+        });
+
+        // Sort tags alphabetically by friendly name
+        const sortedTags = Array.from(usedTags).sort((a, b) => {
+          const nameA = (tagMetadata[a] || { name: a }).name.toLowerCase();
+          const nameB = (tagMetadata[b] || { name: b }).name.toLowerCase();
+          return nameA.localeCompare(nameB);
+        });
+
+        let html = '';
+        sortedTags.forEach(tag => {
+          const meta = tagMetadata[tag] || { name: tag };
+          html += `<span class="badge badge-outline-secondary tag-filter-btn mr-1 mb-1" style="cursor: pointer; border: 1px solid #6c757d;" title="${escapeHtml(meta.description || '')}" onclick="addTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
+        });
+
+        container.innerHTML = html;
+      }
+
+      // Debounce search
+      let searchTimeout;
+      document.getElementById('search-input').addEventListener('input', function(e) {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => applyFilters(), 200);
+      });
+
+      // Sort dropdown
+      document.getElementById('sort-select').addEventListener('change', function(e) {
+        currentSort = e.target.value;
+        applyFilters();
+      });
+
+      // Clear all button
+      document.getElementById('clear-all-btn').addEventListener('click', clearAllFilters);
+
+      // Initial render
+      renderTagButtons();
+      renderPage();

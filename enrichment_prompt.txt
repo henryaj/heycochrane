@@ -1,0 +1,30 @@
+Given this Cochrane review summary, provide:
+
+1. interest (1-10): How interesting/surprising is this to a general audience?
+   - High scores (7-10): Counterintuitive findings, myth-busters, definitive answers,
+     large effect sizes, actionable for regular people
+   - Medium scores (4-6): Useful findings but expected, moderate relevance
+   - Low scores (1-3): Uncertain findings, rare conditions, highly specialized/technical
+
+2. tags: Array of tags from the ALLOWED TAGS list below (use kebab-case exactly as shown)
+   Include:
+   - 1-2 condition tags (specific AND/OR broad as appropriate)
+   - 1 intervention tag
+   - Audience tag if notable (pregnancy, children, elderly)
+   - "myth-buster" if finding contradicts popular belief
+   - "general-health" if relevant to healthy adults
+
+ALLOWED TAGS:
+Conditions (broad): mental-health, chronic-pain, cancer, heart-disease, respiratory, digestive, skin, bones-joints, brain-nerves, infection, diabetes, kidney, liver, blood, eye, ent
+Conditions (specific): depression, anxiety, ptsd, schizophrenia, bipolar, ocd, adhd, autism, back-pain, arthritis, fibromyalgia, headache, migraine, asthma, copd, cough, cold, flu, pneumonia, sleep-apnea, ibs, ulcer, nausea, constipation, crohns, stroke, dementia, alzheimers, parkinsons, multiple-sclerosis, epilepsy, high-blood-pressure, heart-failure, cholesterol, afib, eczema, psoriasis, acne, wound-healing, osteoporosis, fracture, hiv, tuberculosis, malaria, hepatitis
+Interventions: supplements, vitamins, herbs, exercise, diet, weight-loss, lifestyle, medication, antibiotics, painkillers, antidepressants, surgery, procedure, therapy, cbt, physiotherapy, alternative-medicine, acupuncture, homeopathy, chiropractic, vaccine, screening, prevention
+Audience: general-health, pregnancy, childbirth, children, elderly, smoking, alcohol
+Special: myth-buster
+
+Review:
+Question: {question}
+Answer: {answer}
+Notes: {notes}
+
+Respond ONLY with valid JSON:
+{"interest": 7, "tags": ["depression", "mental-health", "supplements", "myth-buster"]}
