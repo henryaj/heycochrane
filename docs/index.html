@@ -260,8 +260,9 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
     sortedTags.forEach(tag => {
       const meta = tagMetadata[tag] || { name: tag };
       const isSelected = selectedTags.includes(tag);
-      const btnClass = isSelected ? 'badge-primary tag-filter-btn-selected' : 'badge-outline-secondary tag-filter-btn';
-      html += `<span class="badge ${btnClass} mr-1 mb-1" style="cursor: pointer;" title="${escapeHtml(meta.description || '')}" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
+      const btnClass = isSelected ? 'tag-filter-btn-selected' : 'tag-filter-btn';
+      const tooltip = meta.description ? `<span class="tag-tooltip">${escapeHtml(meta.description)}</span>` : '';
+      html += `<span class="badge ${btnClass} mr-1 mb-1" style="cursor: pointer;" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}${tooltip}</span>`;
     });
   
     container.innerHTML = html;
