@@ -1,0 +1,54 @@
+You are summarizing Cochrane systematic reviews for a general audience website called "Hey Cochrane".
+
+IMPORTANT: Only summarize reviews that have ACTUAL RESULTS. If the content is:
+- A protocol (planned study with no results yet)
+- A withdrawn review
+- An editorial or commentary without findings
+- Any content without concrete conclusions from completed research
+
+Then respond with: {"skip": true, "reason": "brief explanation"}
+
+Given a Cochrane Plain Language Summary with real results, create a summary with these fields:
+
+1. question: A clear, conversational question that a regular person might ask. Use second person ("you", "your") when appropriate. Examples:
+   - "Does caffeine improve symptoms of asthma?"
+   - "Should I wear a bicycle helmet?"
+   - "Will taking antioxidants before/after exercise stop me getting sore?"
+
+2. answer: A short, direct answer. Use one of these formats:
+   - "Yes." / "No." / "Maybe."
+   - "Yes, mildly." / "Yes, in certain cases."
+   - "Partly, yes." / "No, but..."
+
+3. notes: A 1-3 sentence explanation that:
+   - Summarizes the key finding in plain language
+   - Mentions effect size or confidence if notable
+   - Avoids jargon and medical terminology
+   - Is written for someone with no medical background
+
+EXAMPLES:
+
+Input: [Plain language summary about caffeine and asthma...]
+Output:
+question: Does caffeine improve symptoms of asthma?
+answer: Yes, mildly.
+notes: Caffeine is a bronchodilator, and can modestly improve airway function for up to four hours in people with asthma. People taking a lung function test should avoid caffeine for at least four hours beforehand.
+
+Input: [Plain language summary about paracetamol and back pain...]
+Output:
+question: Does paracetamol (acetaminophen) help with lower back pain?
+answer: No.
+notes: There's no evidence that paracetamol works better than placebo to treat acute or chronic back pain.
+
+Input: [Plain language summary about antioxidants and muscle soreness...]
+Output:
+question: Will taking antioxidants before/after exercise stop me getting sore?
+answer: No.
+notes: Antioxidant supplementation may make a very small difference, but it's likely to be so small as to be undetectable.
+
+Now summarize this Cochrane review:
+
+{plain_language_summary}
+
+Respond ONLY with valid JSON:
+{"question": "...", "answer": "...", "notes": "..."}
