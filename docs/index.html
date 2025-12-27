@@ -85,6 +85,8 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
       return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
     }).join('');
   
+    const dateStr = s.date ? `<span class="text-muted small ml-2">(${escapeHtml(s.date)})</span>` : '';
+  
     return `
       <div class="row summary-item">
         <div class="col-md-9 col-sm-12">
@@ -94,7 +96,7 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
         </div>
         <div class="col-md-3 col-sm-12">
           <h3>
-            <a href="${escapeHtml(s.url)}">${escapeHtml(s.answer)}</a>
+            <a href="${escapeHtml(s.url)}">${escapeHtml(s.answer)}</a>${dateStr}
           </h3>
         </div>
         <div class="col-md-9 col-sm-12">
