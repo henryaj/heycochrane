@@ -33,6 +33,7 @@
               %label.mr-2 Sort by:
               %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
                 %option{:value => "default"} Default
+                %option{:value => "latest"} Latest
                 %option{:value => "interest"} Most Interesting
 
       .row.mb-3#tag-filter-section
@@ -204,6 +205,13 @@
         // Apply sort
         if (currentSort === 'interest') {
           results = [...results].sort((a, b) => (b.interest || 0) - (a.interest || 0));
+        } else if (currentSort === 'latest') {
+          results = [...results].sort((a, b) => {
+            if (!a.date && !b.date) return 0;
+            if (!a.date) return 1;
+            if (!b.date) return -1;
+            return new Date(b.date) - new Date(a.date);
+          });
         }
 
         filteredSummaries = results;
