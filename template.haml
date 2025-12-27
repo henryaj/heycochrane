@@ -37,9 +37,7 @@
 
       .row.mb-3#tag-filter-section
         .col-12
-          %div#tag-buttons.mb-2
-          %div#active-filters.d-flex.flex-wrap.align-items-center
-            %span#clear-all-btn.badge.badge-secondary.mr-2{:style => "cursor: pointer; display: none;"} Clear all
+          %div#tag-buttons
 
       #summaries-container
 
@@ -68,19 +66,16 @@
       let currentSort = 'default';
 
       function renderSummary(s) {
-        const interestBadge = s.interest ?
-          `<span class="badge badge-${getInterestBadgeClass(s.interest)}" title="Interest score: ${s.interest}/10">${s.interest}</span>` : '';
-
         const tagBadges = (s.tags || []).map(tag => {
           const meta = tagMetadata[tag] || { name: tag };
-          return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="addTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
+          return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
         }).join('');
 
         return `
           <div class="row summary-item">
             <div class="col-md-9 col-sm-12">
               <div>
-                <h2>${interestBadge} ${escapeHtml(s.question)}</h2>
+                <h2>${escapeHtml(s.question)}</h2>
               </div>
             </div>
             <div class="col-md-3 col-sm-12">
@@ -99,13 +94,6 @@
             </div>
           </div>
         `;
-      }
-
-      function getInterestBadgeClass(score) {
-        if (score >= 8) return 'success';
-        if (score >= 6) return 'info';
-        if (score >= 4) return 'warning';
-        return 'secondary';
       }
 
       function escapeHtml(text) {
@@ -227,50 +215,16 @@
         applyFilters();
       }
 
-      function addTagFilter(tag) {
-        if (!selectedTags.includes(tag)) {
-          selectedTags.push(tag);
-          renderActiveFilters();
-          applyFilters();
+      function toggleTagFilter(tag) {
+        if (selectedTags.includes(tag)) {
+          // Unselect if already selected
+          selectedTags = [];
+        } else {
+          // Select this tag (replacing any previous selection)
+          selectedTags = [tag];
         }
-      }
-
-      function removeTagFilter(tag) {
-        selectedTags = selectedTags.filter(t => t !== tag);
-        renderActiveFilters();
+        renderTagButtons();
         applyFilters();
-      }
-
-      function clearAllFilters() {
-        selectedTags = [];
-        renderActiveFilters();
-        applyFilters();
-      }
-
-      function renderActiveFilters() {
-        const container = document.getElementById('active-filters');
-        const clearBtn = document.getElementById('clear-all-btn');
-
-        // Remove existing filter chips (but keep clear button)
-        const existingChips = container.querySelectorAll('.filter-chip');
-        existingChips.forEach(chip => chip.remove());
-
-        if (selectedTags.length === 0) {
-          clearBtn.style.display = 'none';
-          return;
-        }
-
-        clearBtn.style.display = 'inline-block';
-
-        selectedTags.forEach(tag => {
-          const meta = tagMetadata[tag] || { name: tag };
-          const chip = document.createElement('span');
-          chip.className = 'badge badge-primary filter-chip mr-1 mb-1';
-          chip.style.cursor = 'pointer';
-          chip.innerHTML = `${escapeHtml(meta.name)} <span class="ml-1" style="font-weight: bold;">&times;</span>`;
-          chip.onclick = () => removeTagFilter(tag);
-          container.appendChild(chip);
-        });
       }
 
       function renderTagButtons() {
@@ -292,7 +246,9 @@
         let html = '';
         sortedTags.forEach(tag => {
           const meta = tagMetadata[tag] || { name: tag };
-          html += `<span class="badge badge-outline-secondary tag-filter-btn mr-1 mb-1" style="cursor: pointer; border: 1px solid #6c757d;" title="${escapeHtml(meta.description || '')}" onclick="addTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
+          const isSelected = selectedTags.includes(tag);
+          const btnClass = isSelected ? 'badge-primary tag-filter-btn-selected' : 'badge-outline-secondary tag-filter-btn';
+          html += `<span class="badge ${btnClass} mr-1 mb-1" style="cursor: pointer;" title="${escapeHtml(meta.description || '')}" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
         });
 
         container.innerHTML = html;
@@ -310,9 +266,6 @@
         currentSort = e.target.value;
         applyFilters();
       });
-
-      // Clear all button
-      document.getElementById('clear-all-btn').addEventListener('click', clearAllFilters);
 
       // Initial render
       renderTagButtons();

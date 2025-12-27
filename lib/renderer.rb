@@ -11,13 +11,13 @@ class Renderer
   end
 
   def render(options = {})
-    engine = Haml::Engine.new(template)
     summaries_json = Summary.to_json_array(@summaries)
     tag_metadata_json = Summary.tag_metadata_json
-    engine.render(Object.new, {
+    locals = {
       summaries: @summaries,
       summaries_json: summaries_json,
       tag_metadata_json: tag_metadata_json
-    })
+    }
+    Haml::Template.new { template }.render(Object.new, locals)
   end
 end
