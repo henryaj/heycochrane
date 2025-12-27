@@ -25,6 +25,7 @@ class Summary
         notes: s["notes"],
         interest: s["interest"],
         tags: s["tags"] || [],
+        date: s["date"],
       )
     end
 
@@ -39,7 +40,7 @@ class Summary
     tag_metadata.to_json
   end
 
-  attr_accessor :question, :answer, :url, :notes, :interest, :tags
+  attr_accessor :question, :answer, :url, :notes, :interest, :tags, :date
 
   def initialize(args)
     @question = args[:question]
@@ -48,6 +49,7 @@ class Summary
     @notes = args[:notes]
     @interest = args[:interest]
     @tags = args[:tags] || []
+    @date = args[:date]
   end
 
   def to_hash
@@ -57,7 +59,8 @@ class Summary
       url: @url,
       notes: @notes,
       interest: @interest,
-      tags: @tags
+      tags: @tags,
+      date: @date
     }
   end
 end

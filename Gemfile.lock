@@ -1,19 +1,36 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ffi (1.17.2)
+    ffi (1.17.2-arm64-darwin)
+    foreman (0.90.0)
+      thor (~> 1.4)
     haml (7.1.0)
       temple (>= 0.8.2)
       thor
       tilt
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
+    rerun (0.14.0)
+      listen (~> 3.0)
     temple (0.10.4)
     thor (1.4.0)
     tilt (2.6.1)
+    webrick (1.9.2)
 
 PLATFORMS
+  arm64-darwin-24
   ruby
 
 DEPENDENCIES
+  foreman
   haml
+  rerun
+  webrick
 
 BUNDLED WITH
    2.7.0
