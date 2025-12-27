@@ -32,6 +32,7 @@ RSS_URL = "https://www.cochranelibrary.com/cdsr/table-of-contents/rss.xml"
 NEWS_URL = "https://www.cochrane.org/news"
 COCHRANE_BASE_URL = "https://www.cochrane.org"
 REQUEST_TIMEOUT = 30
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent
 SUMMARIES_PATH = REPO_ROOT / "summaries.yml"
@@ -86,7 +87,8 @@ def scrape_news_page() -> list[dict]:
     logger.info(f"Scraping news page from {NEWS_URL}")
 
     try:
-        response = requests.get(NEWS_URL, timeout=REQUEST_TIMEOUT)
+        headers = {"User-Agent": USER_AGENT}
+        response = requests.get(NEWS_URL, timeout=REQUEST_TIMEOUT, headers=headers)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -123,13 +125,33 @@ def scrape_news_page() -> list[dict]:
         return []
 
 
-def fetch_plain_language_summary(url: str) -> Optional[str]:
+def fetch_plain_language_summary(url: str, cd_number: str = None) -> Optional[str]:
     """Fetch the Plain Language Summary from a Cochrane review page."""
-    logger.info(f"Fetching review content from {url}")
+    headers = {"User-Agent": USER_AGENT}
+
+    # Try cochrane.org URL format first (more reliable)
+    urls_to_try = []
+    if cd_number:
+        urls_to_try.append(f"https://www.cochrane.org/{cd_number}")
+    urls_to_try.append(url)
+
+    response = None
+    for try_url in urls_to_try:
+        logger.info(f"Fetching review content from {try_url}")
+        try:
+            response = requests.get(try_url, timeout=REQUEST_TIMEOUT, headers=headers, allow_redirects=True)
+            if response.status_code == 200:
+                break
+            logger.warning(f"Got status {response.status_code} for {try_url}")
+        except Exception as e:
+            logger.warning(f"Failed to fetch {try_url}: {e}")
+            continue
+
+    if not response or response.status_code != 200:
+        logger.error(f"Could not fetch any URL for {cd_number}")
+        return None
 
     try:
-        response = requests.get(url, timeout=REQUEST_TIMEOUT)
-        response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -229,11 +251,10 @@ def enrich_summary(summary: dict) -> Optional[dict]:
     with open(ENRICHMENT_PROMPT_PATH, 'r') as f:
         prompt_template = f.read()
 
-    prompt = prompt_template.format(
-        question=summary['question'],
-        answer=summary['answer'],
-        notes=summary['notes']
-    )
+    # Use replace instead of format to avoid issues with JSON curly braces in template
+    prompt = prompt_template.replace('{question}', summary['question'])
+    prompt = prompt.replace('{answer}', summary['answer'])
+    prompt = prompt.replace('{notes}', summary['notes'])
 
     response = call_claude(prompt, max_tokens=100)
     if not response:
@@ -344,7 +365,7 @@ def main():
         logger.info(f"Processing {review['cd_number']}...")
 
         # Fetch plain language summary
-        pls = fetch_plain_language_summary(review['url'])
+        pls = fetch_plain_language_summary(review['url'], review['cd_number'])
         if not pls:
             logger.warning(f"Skipping {review['cd_number']} - could not fetch content")
             continue
