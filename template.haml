@@ -66,13 +66,24 @@
       let selectedTags = [];
       let currentSort = 'default';
 
+      function formatDate(dateStr) {
+        if (!dateStr) return '';
+        const date = new Date(dateStr);
+        const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                        'July', 'August', 'September', 'October', 'November', 'December'];
+        const day = date.getDate();
+        const month = months[date.getMonth()];
+        const year = date.getFullYear();
+        return `${day} ${month} ${year}`;
+      }
+
       function renderSummary(s) {
         const tagBadges = (s.tags || []).map(tag => {
           const meta = tagMetadata[tag] || { name: tag };
           return `<span class="badge badge-light tag-badge mr-1" title="${escapeHtml(meta.description || '')}" onclick="toggleTagFilter('${tag}')">${escapeHtml(meta.name)}</span>`;
         }).join('');
 
-        const dateStr = s.date ? `<span class="text-muted small ml-2">(${escapeHtml(s.date)})</span>` : '';
+        const dateHtml = s.date ? `<div class="summary-date">${formatDate(s.date)}</div>` : '';
 
         return `
           <div class="row summary-item">
@@ -83,8 +94,9 @@
             </div>
             <div class="col-md-3 col-sm-12">
               <h3>
-                <a href="${escapeHtml(s.url)}">${escapeHtml(s.answer)}</a>${dateStr}
+                <a href="${escapeHtml(s.url)}">${escapeHtml(s.answer)}</a>
               </h3>
+              ${dateHtml}
             </div>
             <div class="col-md-9 col-sm-12">
               <p>${escapeHtml(s.notes)}</p>

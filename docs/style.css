@@ -274,6 +274,14 @@ body {
   border-color: var(--primary-color);
 }
 
+.summary-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
 .summary-item p {
   color: var(--text-secondary);
   font-size: 0.95rem;
