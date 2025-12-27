@@ -1,0 +1,1472 @@
+# Generated Cochrane Review Summaries
+# Auto-generated from Plain Language Summaries
+
+- question: Is the State-Trait Anxiety Inventory (STAI) effective for screening anxiety disorders?
+  answer: No.
+  url: https://www.cochrane.org/CD015458
+  notes: |
+    The STAI wasn't designed for screening and has high false positive rates, incorrectly flagging about 75% of people without anxiety. Shorter questionnaires specifically developed for anxiety screening are preferable.
+
+- question: Do rapid tests for tuberculosis improve patient outcomes?
+  answer: Partly, yes.
+  url: https://www.cochrane.org/CD016194
+  notes: |
+    Rapid nucleic acid tests (like Xpert MTB/RIF Ultra) reduce the time to diagnose TB and start treatment, but they don't reduce deaths within 18 months.
+
+- question: Do multi-component interventions help adolescents with obesity?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD016062
+  notes: |
+    Community-based approaches may slightly improve physical well-being and reduce BMI, but healthcare-based approaches made little difference. Evidence is limited and mostly from high-income countries.
+
+- question: Does electrical stimulation help stroke survivors recover muscle strength?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015338
+  notes: |
+    Electrical stimulation shows moderate benefit for muscle strength and everyday activities like reaching and walking. However, once patients can practice activities independently, stimulation provides minimal extra benefit.
+
+- question: Is the Beck Anxiety Inventory effective for screening anxiety disorders?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015457
+  notes: |
+    The BAI's utility for detecting anxiety disorders is uncertain. It misses many people with anxiety and incorrectly identifies others. Shorter screening questionnaires may be preferable.
+
+- question: Is it safe to use lower hemoglobin thresholds for blood transfusions in premature infants?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000512
+  notes: |
+    Lower and higher hemoglobin thresholds show similar rates of death or disability at two years. Using lower thresholds reduces the number of transfusions without compromising outcomes.
+
+- question: Do school meal programs improve outcomes for disadvantaged children?
+  answer: Partly, yes.
+  url: https://www.cochrane.org/CD014794
+  notes: |
+    In low- and middle-income countries, school meals lead to small increases in math scores, enrollment, height and weight. However, they may have little effect on reading scores or attendance.
+
+- question: Does manual therapy combined with exercise help with neck pain?
+  answer: Yes.
+  url: https://www.cochrane.org/CD011225
+  notes: |
+    Manual therapy with exercise provides a large reduction in pain and moderate improvements in function compared to no treatment. Compared to placebo, benefits are minimal for pain but moderate for function.
+
+- question: Does methylphenidate (Ritalin) help children with ADHD?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD009885
+  notes: |
+    Methylphenidate may improve ADHD symptoms and general behavior based on teacher ratings. It may not affect quality of life and can cause side effects like sleep problems and decreased appetite.
+
+- question: Does taking calcium supplements during pregnancy prevent pre-eclampsia?
+  answer: No.
+  url: https://www.cochrane.org/CD001059
+  notes: |
+    Calcium supplementation shows little to no difference in preventing pre-eclampsia for women with adequate calcium diets. It may help women with low calcium intake, but overall evidence doesn't support calcium as effective prevention.
+
+- question: Does acupuncture help with insomnia in people with cancer?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015177
+  notes: |
+    Acupuncture may be more effective than no treatment for insomnia in cancer patients, but evidence is weak. It was probably less effective than cognitive behavioral therapy (CBT-I).
+
+- question: Is conservative kidney management a good alternative to dialysis for older adults?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015151
+  notes: |
+    It's unclear whether conservative kidney management affects death rates or quality of life compared to dialysis in older adults with stage 5 kidney disease. No randomized trials exist.
+
+- question: Is there an effective treatment for neurotrophic keratopathy?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015723
+  notes: |
+    Recombinant human nerve growth factor (rhNGF) may help heal corneal wounds, but evidence is uncertain. More studies with better designs are needed to determine the best treatment.
+
+- question: Does digital technology improve treatment adherence in cystic fibrosis patients?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD013733
+  notes: |
+    Data-tracking nebulisers with online support probably improve adherence to inhaled therapies and reduce treatment burden, but make little difference to quality of life or disease flare-ups.
+
+- question: Do multi-component interventions help children with obesity?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD016063
+  notes: |
+    Healthcare-based programs may improve physical activity, and community-based programs may slightly improve quality of life, but overall effects on weight and other outcomes are limited.
+
+- question: Are the GAD-7 and GAD-2 questionnaires effective for screening anxiety disorders?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD015455
+  notes: |
+    GAD-7 and GAD-2 show acceptable accuracy for screening generalized anxiety disorder, but cannot diagnose anxiety disorders alone. They provide an indication of whether anxiety may be present.
+
+- question: Can First Rank Symptoms alone diagnose schizophrenia?
+  answer: No.
+  url: https://www.cochrane.org/CD010653
+  notes: |
+    First Rank Symptoms correctly identify only about 57% of people with schizophrenia and incorrectly diagnose about 20% without it. They may help identify candidates for specialist evaluation but cannot be used alone.
+
+- question: Does convalescent plasma help treat COVID-19?
+  answer: No.
+  url: https://www.cochrane.org/CD013600
+  notes: |
+    Convalescent plasma makes no difference to deaths or clinical outcomes for people with moderate to severe COVID-19. For mild COVID-19, evidence is uncertain.
+
+- question: Does fecal microbiota transplantation help with inflammatory bowel disease?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD012774
+  notes: |
+    FMT may help people with active ulcerative colitis achieve disease control, but evidence for Crohn disease is very limited. Safety and quality of life effects are uncertain.
+
+- question: Do chloroquine or hydroxychloroquine help treat or prevent COVID-19?
+  answer: No.
+  url: https://www.cochrane.org/CD013587
+  notes: |
+    Hydroxychloroquine does not reduce COVID-19 deaths and probably doesn't reduce the need for mechanical ventilation. It also doesn't prevent infection and may cause mild side effects.
+
+- question: Are rapid antigen tests reliable for detecting COVID-19 in people without symptoms?
+  answer: No.
+  url: https://www.cochrane.org/CD013705
+  notes: |
+    Rapid antigen tests detect only about 55% of COVID-19 infections in asymptomatic people. None meet WHO standards for confirming or ruling out COVID-19 in people without symptoms.
+
+- question: Does remdesivir help treat COVID-19?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD014962
+  notes: |
+    Remdesivir makes little difference to deaths but may slightly improve recovery and reduce risk of needing ventilation for hospitalized patients. For non-hospitalized patients, it may reduce hospitalization risk.
+
+- question: Do IL-6 blocking medicines like tocilizumab help treat COVID-19?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD013881
+  notes: |
+    Tocilizumab reduces COVID-19 deaths within 28 days with high certainty, but makes little difference to clinical improvement like hospital discharge or symptom relief.
+
+- question: Does ivermectin help prevent or treat COVID-19?
+  answer: No.
+  url: https://www.cochrane.org/CD015017
+  notes: |
+    Ivermectin has no beneficial effect for people with COVID-19. It hasn't been tested for prevention, and medical regulators have not approved it for COVID-19 use.
+
+- question: Does quitting smoking improve mental health?
+  answer: Yes.
+  url: https://www.cochrane.org/CD013522
+  notes: |
+    People who stop smoking show greater reductions in anxiety, depression, and stress, plus improvements in positive feelings and well-being. This is true whether or not they have existing mental health conditions.
+
+- question: Does Paxlovid (nirmatrelvir/ritonavir) help treat COVID-19?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD015395
+  notes: |
+    Paxlovid may reduce deaths and hospitalizations for unvaccinated, high-risk outpatients treated within 5 days of symptoms. It can cause taste disturbance and diarrhea.
+
+- question: Can symptoms alone accurately diagnose COVID-19?
+  answer: No.
+  url: https://www.cochrane.org/CD013665
+  notes: |
+    Most individual symptoms have poor diagnostic accuracy. Loss of smell/taste is the most useful indicator, making COVID-19 five times more likely, but symptoms alone cannot reliably diagnose the disease.
+
+- question: Do corticosteroids help treat hospitalized COVID-19 patients?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD014963
+  notes: |
+    Systemic corticosteroids probably reduce deaths slightly and may increase hospital discharge rates for hospitalized COVID-19 patients. Long-term effects and safety are uncertain.
+
+- question: Do non-medicinal measures prevent COVID-19 in long-term care facilities?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015085
+  notes: |
+    Testing, isolation, and combination measures may prevent COVID-19 infections, but evidence quality is low. Visiting restrictions may prevent spread but can cause mental health harms like depression.
+
+- question: Should cancer patients on chemotherapy take blood thinners to prevent clots?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD008500
+  notes: |
+    Low-molecular-weight heparins reduce blood clots in cancer patients on chemotherapy with high certainty, but increase bleeding risk. The balance of benefits and harms should be considered individually.
+
+- question: Are rapid molecular tests useful for diagnosing tuberculosis outside the lungs?
+  answer: Yes.
+  url: https://www.cochrane.org/CD012768
+  notes: |
+    Xpert Ultra and Truenat MTB Plus tests are helpful for diagnosing extrapulmonary TB, with high accuracy for cerebrospinal fluid and rifampicin resistance detection. Sensitivity varies by specimen type.
+
+- question: Do placebos have significant clinical effects?
+  answer: No.
+  url: https://www.cochrane.org/CD003974
+  notes: |
+    Placebos show no dramatic general benefits, but can modestly influence subjective patient experiences like pain and nausea. Physical placebo interventions work better than pills.
+
+- question: Are there effective interventions for increasing shared decision-making in healthcare?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006732
+  notes: |
+    There's no clear evidence that training programs or decision aids effectively increase shared decision-making. Many activities exist, but evidence is too weak to determine which work best.
+
+- question: Do antioxidant supplements prevent death?
+  answer: No.
+  url: https://www.cochrane.org/CD007176
+  notes: |
+    Antioxidant supplements showed no overall mortality benefit in 78 trials with nearly 300,000 participants. Beta-carotene and vitamin E may actually increase mortality.
+
+- question: Does reminiscence therapy help people with dementia?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001120
+  notes: |
+    Reminiscence therapy may improve quality of life, cognition, communication and possibly mood in people with dementia, though all benefits are small. Effectiveness depends on delivery setting.
+
+- question: Does animal-assisted therapy help people with dementia?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013243
+  notes: |
+    People with dementia who had animal-assisted therapy were possibly slightly less depressed, but there's no clear evidence for benefits on quality of life, behaviors, or daily activities.
+
+- question: Is rehabilitation beneficial after carpal tunnel surgery?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD004158
+  notes: |
+    There's limited and low-quality evidence for post-surgery rehabilitation benefits like splinting, exercise, or laser therapy. Decisions should be based on clinical expertise and patient preferences.
+
+- question: Do computer-generated reminders improve healthcare quality?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001175
+  notes: |
+    Reminders for doctors improve quality of care by about 7-11%, helping with guideline compliance. However, evidence for improved patient outcomes is uncertain.
+
+- question: Can urine tests diagnose endometriosis?
+  answer: No.
+  url: https://www.cochrane.org/CD012019
+  notes: |
+    There's insufficient evidence to recommend any urinary biomarker for diagnosing endometriosis. Laparoscopy (surgical visualization) remains the gold standard for diagnosis.
+
+- question: Do nicotine e-cigarettes help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD010216
+  notes: |
+    Nicotine e-cigarettes can help people stop smoking for at least six months and work better than nicotine replacement therapy. Common side effects include throat irritation, headache, and cough.
+
+- question: Are 'red flag' screening tests accurate for detecting spinal fractures?
+  answer: No.
+  url: https://www.cochrane.org/CD008643
+  notes: |
+    Most individual red flag tests are not accurate. Steroid use, age over 74, and recent trauma are the most useful indicators. Combining multiple red flags improves accuracy.
+
+- question: Does exercise help women undergoing breast cancer treatment?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD005001
+  notes: |
+    Exercise during cancer treatment probably improves physical fitness and slightly reduces fatigue, but provides little improvement in depression or overall quality of life.
+
+- question: Do antidepressants help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000031
+  notes: |
+    Bupropion makes it 49-72% more likely that a person will quit smoking. However, it may increase serious unwanted effects and cause side effects leading to treatment dropout.
+
+- question: Do stress management interventions help healthcare workers?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD002892
+  notes: |
+    Individual stress management interventions like CBT, yoga, or relaxation may reduce stress among healthcare workers for up to one year. Evidence quality is low.
+
+- question: Does advice from doctors help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000165
+  notes: |
+    Even brief, simple advice from doctors increases the likelihood of quitting smoking by 1-3% beyond natural quit rates. More intensive interventions provide small additional benefits.
+
+- question: Does cognitive behavioral therapy help with chronic pain?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD007407
+  notes: |
+    CBT provides slight reductions in pain and distress for adults with persistent pain compared to no treatment. Benefits are smaller when compared to other treatments like exercise.
+
+- question: Do omega-3 fatty acids help treat depression?
+  answer: No.
+  url: https://www.cochrane.org/CD004692
+  notes: |
+    Omega-3 fatty acids show a small positive effect compared to placebo, but the benefit is unlikely to be meaningful for people with major depression. Evidence quality is low.
+
+- question: Do psychological therapies like CBT and EMDR help with PTSD?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003388
+  notes: |
+    Trauma-focused CBT and EMDR are effective for reducing PTSD symptoms compared to waitlist or usual care. They appear equally effective as each other.
+
+- question: Do patient decision aids help people make better healthcare choices?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001431
+  notes: |
+    Decision aids help adults choose options matching their values, increase knowledge about treatment options, and promote active participation in medical decisions with no negative side effects.
+
+- question: Do masks prevent respiratory infections like flu?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006207
+  notes: |
+    Wearing masks may make little to no difference in how many people catch flu-like illness. N95 respirators show similar results to surgical masks. Hand hygiene may be more effective.
+
+- question: Does exercise-based rehabilitation help people with heart disease?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001800
+  notes: |
+    Exercise-based cardiac rehabilitation reduces heart attack risk and hospital admissions, may slightly reduce death rates, and improves quality of life within 12 months.
+
+- question: Does honey help heal wounds?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD005083
+  notes: |
+    Honey dressings heal partial thickness burns faster than conventional dressings (4-5 days faster). Evidence is unclear for other wound types like leg ulcers or diabetic foot ulcers.
+
+- question: Does exercise therapy help with chronic fatigue syndrome?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD003200
+  notes: |
+    Exercise therapy probably reduces fatigue compared to passive treatments, but improvements may not last. Compared to CBT or pacing strategies, it makes little difference.
+
+- question: Does fluoride toothpaste prevent tooth decay?
+  answer: Yes.
+  url: https://www.cochrane.org/CD007868
+  notes: |
+    Toothpaste containing 1000-1250 ppm fluoride is more effective than non-fluoride toothpaste with high certainty. Higher concentrations provide slightly more protection but increase fluorosis risk in children.
+
+- question: Does exercise help treat depression?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD004366
+  notes: |
+    Exercise shows a moderate effect in reducing depression symptoms compared to no treatment, but is no more effective than antidepressants or psychological therapy.
+
+- question: Do alpha2-agonists like clonidine help manage opioid withdrawal?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002024
+  notes: |
+    Clonidine and lofexidine are more effective than placebo for managing opioid withdrawal. Methadone has fewer side effects and shorter treatment duration. Lofexidine is safer than clonidine.
+
+- question: Do psychological therapies help parents of children with chronic illness?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD009660
+  notes: |
+    CBT and problem-solving therapy may improve parenting behavior and mental health, especially for parents of children with cancer or chronic pain. Effects are generally small.
+
+- question: Does the flu vaccine protect healthy adults?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001269
+  notes: |
+    Inactivated flu vaccines reduce influenza cases from 2.3% to 0.9%, but 71 people need vaccination to prevent one case. Effects on hospitalization and work days lost are minimal.
+
+- question: Does nicotine replacement therapy help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000146
+  notes: |
+    All forms of NRT (patches, gum, spray, lozenges) increase the chance of quitting by 50-60% with high-certainty evidence. Minor side effects include skin or mouth irritation.
+
+- question: Do flexible working arrangements improve employee health?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD008009
+  notes: |
+    Self-scheduling and employee-controlled flexibility improve blood pressure, sleep, and mental health. Employer-dictated flexibility (overtime, fixed-term contracts) shows no health benefits.
+
+- question: Does garlic help prevent the common cold?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006206
+  notes: |
+    One study showed fewer colds in people taking daily garlic (24 vs 65 colds over 3 months), but there's insufficient evidence overall. More studies are needed.
+
+- question: Does organized support help mothers continue breastfeeding?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001141
+  notes: |
+    Extra support from professionals or trained workers reduces the number of women who stop breastfeeding by 10-19%. Support is more effective when delivered as 4-8 scheduled visits.
+
+- question: Do statins prevent heart disease in people without prior cardiovascular events?
+  answer: Yes.
+  url: https://www.cochrane.org/CD004816
+  notes: |
+    Statins reduce mortality and cardiovascular events in primary prevention. For every 1,000 people treated for 5 years, 18 avoid a major cardiovascular event. No evidence of serious harm.
+
+- question: Should pregnant women take vitamin D supplements?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD008873
+  notes: |
+    Vitamin D may reduce severe postpartum bleeding and low birthweight risk, but evidence quality is low. Effects on pre-eclampsia, gestational diabetes, and preterm birth are uncertain.
+
+- question: Does galantamine help with Alzheimer's disease?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001747
+  notes: |
+    Galantamine slows decline in memory and self-care abilities at 6 months. It does not help mild cognitive impairment. Users are 3 times more likely to have GI side effects.
+
+- question: Do educational meetings improve healthcare professional practices?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD003030
+  notes: |
+    Healthcare professionals who attend educational meetings are more likely to follow recommended practices and produce slightly improved patient outcomes.
+
+- question: Do psychological therapies help children with chronic pain?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD003968
+  notes: |
+    Therapies like CBT and relaxation reduce pain and disability immediately after treatment, but benefits often fade at follow-up. No effect on depression.
+
+- question: Should breastfed babies receive supplementary foods or fluids before 6 months?
+  answer: No.
+  url: https://www.cochrane.org/CD006462
+  notes: |
+    There's no evidence of benefit from giving water, formula, or early complementary foods to breastfed infants. Exclusive breastfeeding for 6 months is supported.
+
+- question: Do probiotics help treat acute diarrhea?
+  answer: No.
+  url: https://www.cochrane.org/CD003048
+  notes: |
+    Probiotics probably make little to no difference to diarrhea duration or recovery. Previous positive findings were likely due to publication bias.
+
+- question: Is methadone maintenance therapy effective for heroin dependence?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002209
+  notes: |
+    Methadone is more effective than non-pharmacological approaches at retaining patients in treatment and suppressing heroin use. No advantage seen for criminal activity or mortality.
+
+- question: Do programs for people with multiple chronic conditions improve health?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006560
+  notes: |
+    Overall clinical outcomes show little improvement, but mental health (especially depression) may improve modestly. Targeted interventions work better than broad approaches.
+
+- question: Does collaborative care improve treatment of depression and anxiety?
+  answer: Yes.
+  url: https://www.cochrane.org/CD006525
+  notes: |
+    Collaborative care involving doctors, case managers, and mental health specialists improves depression for up to 2 years and is equally effective for anxiety.
+
+- question: Does adding psychotherapy to antidepressants help treatment-resistant depression?
+  answer: Yes.
+  url: https://www.cochrane.org/CD010558
+  notes: |
+    Patients who receive psychotherapy plus antidepressants have fewer symptoms and are more often depression-free at 6 months than those on medication alone.
+
+- question: Is it safe to use lower blood count thresholds for transfusions?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002042
+  notes: |
+    Using lower thresholds (7-8 g/dL vs 9-10 g/dL) reduces transfusions by 42% without increasing death or complications for most patients. Patients with brain injury may need higher thresholds.
+
+- question: Do flu vaccines help prevent heart attacks and strokes?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD005050
+  notes: |
+    Flu vaccination may reduce cardiovascular deaths in people with heart disease. Evidence quality is moderate, and more research is needed for general populations.
+
+- question: Do deworming drugs benefit people with HIV?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006419
+  notes: |
+    Deworming drugs are safe for HIV-positive individuals. Treatment of confirmed worm infections shows some viral load reduction, but effects on those without confirmed infections are minimal.
+
+- question: Does sucrose help reduce pain in newborns during medical procedures?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001069
+  notes: |
+    Sucrose reduces pain during heel lances, blood draws, and injections in newborns. It doesn't work for circumcision. Minor adverse events like choking are rare.
+
+- question: Does early intervention help prevent or treat psychosis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD004718
+  notes: |
+    Specialized early intervention teams improve treatment compliance and reduce dropout. However, individual interventions show inconsistent results, and long-term benefits are uncertain.
+
+- question: Does mammography screening reduce breast cancer deaths?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD001877
+  notes: |
+    For every 2,000 women screened over 10 years, one avoids dying of breast cancer but 10 healthy women are treated unnecessarily. Over 200 experience psychological distress from false alarms.
+
+- question: Do antibiotics help treat acute bronchitis?
+  answer: No.
+  url: https://www.cochrane.org/CD000245
+  notes: |
+    Antibiotics provide minimal benefit (half a day improvement over 8-10 days) and cause side effects. The modest gains don't outweigh the risks of antibiotic resistance.
+
+- question: Does massage help with low back pain?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD001929
+  notes: |
+    Massage may provide short-term pain relief for chronic low back pain compared to no treatment, but benefits don't persist long-term. Evidence quality is very low.
+
+- question: Does pelvic floor training prevent urinary incontinence during pregnancy?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD007471
+  notes: |
+    Pregnant women without leakage who do pelvic floor exercises probably report less incontinence in late pregnancy. Exercises don't help women who already have leakage.
+
+- question: Does continuous support during labor improve birth outcomes?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003766
+  notes: |
+    Continuous one-to-one support leads to more spontaneous vaginal births, shorter labor, fewer cesareans, and greater satisfaction. Benefits are strongest with trained doulas.
+
+- question: Does skin-to-skin contact after birth benefit mothers and babies?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003519
+  notes: |
+    Mothers practicing skin-to-skin contact are more likely to exclusively breastfeed. Babies show higher body temperatures and blood glucose levels, helping them adapt after birth.
+
+- question: Are there effective ways to help people take medicines as prescribed?
+  answer: No.
+  url: https://www.cochrane.org/CD000011
+  notes: |
+    Even the most effective interventions don't lead to large improvements in medication adherence. No reliable method has emerged for helping people consistently follow prescriptions.
+
+- question: Does chemotherapy after surgery improve survival in early-stage ovarian cancer?
+  answer: Yes.
+  url: https://www.cochrane.org/CD004706
+  notes: |
+    Women with early-stage ovarian cancer who receive chemotherapy after surgery have lower risk of dying within 10 years and reduced cancer recurrence.
+
+- question: Does controlling house dust mites improve asthma?
+  answer: No.
+  url: https://www.cochrane.org/CD001187
+  notes: |
+    Chemical and physical methods to reduce dust mite exposure (including mattress encasings) show no difference in lung function, symptoms, or medication use. Cannot be recommended.
+
+- question: Are there effective treatments for rosacea?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003262
+  notes: |
+    Topical metronidazole, azelaic acid, and ivermectin effectively reduce rosacea symptoms. Oral antibiotics like doxycycline reduce pimples. Laser treatments help with blood vessels.
+
+- question: Does advice from nurses help people quit smoking?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001188
+  notes: |
+    Nursing interventions increase quitting success by 29% compared to no intervention. Simpler interventions appear just as effective as more intensive ones.
+
+- question: Is the Xpert Ultra test accurate for diagnosing tuberculosis?
+  answer: Yes.
+  url: https://www.cochrane.org/CD009593
+  notes: |
+    Xpert Ultra correctly identifies 91% of people with TB and 95% without it. It also accurately detects rifampicin resistance, allowing rapid treatment for drug-resistant TB.
+
+- question: Do B vitamins that lower homocysteine prevent heart attacks?
+  answer: No.
+  url: https://www.cochrane.org/CD006612
+  notes: |
+    Despite lowering homocysteine levels, B vitamins (B6, B9, B12) don't prevent heart attacks or reduce death rates. There's a small benefit for stroke prevention.
+
+- question: Do tailored interventions improve healthcare professional practices?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD005470
+  notes: |
+    Interventions designed to address specific barriers show modest effectiveness compared to no intervention. Effects are variable and tend to be small to moderate.
+
+- question: Does dietary advice help reduce cardiovascular risk?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD002128
+  notes: |
+    Dietary advice produces modest reductions in blood pressure and cholesterol, and increases fruit/vegetable intake by about 1 serving daily. Long-term effects are uncertain.
+
+- question: Is there a clear best treatment for male subfertility?
+  answer: No.
+  url: https://www.cochrane.org/CD000360
+  notes: |
+    No evidence of differences in live birth rates between timed intercourse, IUI, IVF, or ICSI for male subfertility. Evidence quality is low to very low.
+
+- question: Do inhaled corticosteroids help with bronchiectasis?
+  answer: No.
+  url: https://www.cochrane.org/CD000996
+  notes: |
+    Inhaled corticosteroids show no significant effect on lung function or exacerbation frequency in adults with stable bronchiectasis. Insufficient evidence for routine use.
+
+- question: Does allergen immunotherapy help with chronic asthma?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD001186
+  notes: |
+    Immunotherapy reduces symptoms, medication use, and severe attack risk. However, 1 in 9 patients experience systemic reactions, and rare fatal reactions can occur.
+
+- question: Does vitamin D prevent fractures in older people?
+  answer: Partly, yes.
+  url: https://www.cochrane.org/CD000227
+  notes: |
+    Vitamin D alone doesn't prevent fractures. However, vitamin D plus calcium slightly reduces hip fractures (by about 16%) especially in institutional settings.
+
+- question: Are there effective treatments for renal vasculitis?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003232
+  notes: |
+    Plasma exchange reduces need for dialysis in severe cases. Cyclophosphamide, rituximab, and mycophenolate are effective. Lower-dose steroids work as well as high doses with fewer infections.
+
+- question: Is excision or ablation better for treating ovarian endometriomas?
+  answer: Excision may be better.
+  url: https://www.cochrane.org/CD004992
+  notes: |
+    Excision may reduce painful periods, pain during sex, and cyst recurrence compared to ablation. No clear difference in fertility outcomes.
+
+- question: Should milk feeds be advanced slowly in premature infants?
+  answer: No.
+  url: https://www.cochrane.org/CD001241
+  notes: |
+    Slow advancement has little effect on preventing bowel inflammation or death. It may increase infections because infants stay on IV nutrition longer.
+
+- question: Does aerobic exercise help with fibromyalgia?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD012700
+  notes: |
+    Walking, swimming, and other aerobic exercises improve quality of life, pain, and physical function in fibromyalgia. Improvements are generally small (7-11 points on 100-point scales).
+
+- question: Do mobility exercises help recovery after hip fracture surgery?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001704
+  notes: |
+    Additional exercises targeting balance, walking, and strength help people regain mobility and walking speed after hip fracture surgery, both in hospital and after discharge.
+
+- question: Does duloxetine help with chronic pain conditions?
+  answer: Yes.
+  url: https://www.cochrane.org/CD007115
+  notes: |
+    Duloxetine at 60mg daily reduces pain in diabetic neuropathy and fibromyalgia. About 1 in 5-8 patients benefit. Common side effects include nausea, headaches, and dry mouth.
+
+- question: Does acupuncture help with low back pain?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD001351
+  notes: |
+    Acupuncture is more effective than no treatment for chronic low back pain in the short term, but shows no advantage over other treatments. Insufficient evidence for acute pain.
+
+- question: Does reminder packaging help people take their medications?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD005025
+  notes: |
+    Reminder packaging with dates/times increases pill-taking by about 11% and can improve clinical measures like blood pressure and blood sugar.
+
+- question: Do omega-3 supplements prevent heart disease?
+  answer: No.
+  url: https://www.cochrane.org/CD003177
+  notes: |
+    Omega-3 supplements have little or no effect on deaths and cardiovascular events (high-certainty evidence). They slightly reduce triglycerides and may marginally reduce coronary events.
+
+- question: Do SSRIs improve recovery after stroke?
+  answer: No.
+  url: https://www.cochrane.org/CD009286
+  notes: |
+    SSRIs don't reduce disability or dependency after stroke. They may reduce depression risk by 25%, but increase seizure and fracture risk.
+
+- question: Does audit and feedback improve healthcare professional performance?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD000259
+  notes: |
+    Audit and feedback improves performance by about 6%. Works best when comparing to top performers, focusing on important areas, and including actionable tips.
+
+- question: Do modifications to whole brain radiotherapy improve outcomes for brain metastases?
+  answer: No.
+  url: https://www.cochrane.org/CD003869
+  notes: |
+    Higher doses, chemotherapy, or radiosensitizers added to standard WBRT don't improve survival. Adding radiosurgery improves brain control but worsens cognitive outcomes.
+
+- question: Are there effective medications for treating alcohol withdrawal?
+  answer: Yes.
+  url: https://www.cochrane.org/CD008537
+  notes: |
+    Benzodiazepines perform better than placebo for preventing seizures during alcohol withdrawal. Evidence for other medications like anticonvulsants is limited.
+
+- question: Can clinical symptoms diagnose Mycoplasma pneumoniae in children?
+  answer: No.
+  url: https://www.cochrane.org/CD009175
+  notes: |
+    M. pneumoniae cannot be reliably diagnosed in children based on symptoms and signs alone. Clinical features are not sufficient to guide antibiotic prescribing decisions.
+
+- question: Should episiotomy be used routinely during childbirth?
+  answer: No.
+  url: https://www.cochrane.org/CD000081
+  notes: |
+    Selective episiotomy (only when necessary) results in 30% fewer cases of severe perineal trauma compared to routine use. No benefits of routine episiotomy found for mothers or babies.
+
+- question: Do omega-3 supplements during pregnancy reduce preterm birth?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003402
+  notes: |
+    Omega-3 fatty acids reduce preterm birth and low birthweight. However, they may increase pregnancies continuing beyond 42 weeks. No clear effects on maternal depression or child development.
+
+- question: Does aromatherapy help with nausea after surgery?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD007598
+  notes: |
+    Aromatherapy may reduce need for anti-nausea medications, but doesn't reliably eliminate nausea itself. Isopropyl alcohol inhalation showed faster relief than standard drugs.
+
+- question: Are short-acting insulin analogues better than regular insulin?
+  answer: No.
+  url: https://www.cochrane.org/CD003287
+  notes: |
+    Short-acting insulin analogues are almost identically effective to regular human insulin for blood sugar control and have similar rates of low blood sugar episodes.
+
+- question: Can diet and exercise prevent type 2 diabetes in people with prediabetes?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003054
+  notes: |
+    Diet plus physical activity reduces diabetes risk from 26% to 15%. Diet alone or physical activity alone don't show clear benefits. Long-term outcomes need more research.
+
+- question: Does telemedicine improve health outcomes?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD002098
+  notes: |
+    Telemedicine improves blood sugar control in diabetes and performs similarly to face-to-face care for mental health. Results for heart failure and other conditions are mixed.
+
+- question: Does exercise help people with dementia?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006489
+  notes: |
+    Exercise may help with daily activities but shows no clear benefit for cognition, mood, or behavior in people with dementia. It appears safe but more research is needed.
+
+- question: Is there effective treatment for molluscum contagiosum?
+  answer: No.
+  url: https://www.cochrane.org/CD004767
+  notes: |
+    Topical imiquimod is no more effective than placebo and causes more skin reactions. No treatment shows convincing effectiveness. Natural resolution remains the best approach.
+
+- question: Do antioxidant supplements improve male fertility?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD007411
+  notes: |
+    Antioxidants may increase live birth rates from 16% to 17-27%, but benefit disappeared when low-quality studies were excluded. Evidence is inconclusive.
+
+- question: Is laparoscopic surgery better than open surgery for appendix removal?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001546
+  notes: |
+    Laparoscopic surgery reduces pain, wound infections, and hospital stay (by 1 day), with faster return to activities (5 days earlier). May increase internal abdominal infections.
+
+- question: Do gels and fluids prevent scar tissue after gynecological surgery?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001298
+  notes: |
+    Gels and fluids reduce visible adhesion formation, but there's no evidence they improve fertility or reduce pelvic pain. Practical clinical benefits remain unproven.
+
+- question: Is sustained lung inflation better for newborns needing breathing help?
+  answer: No.
+  url: https://www.cochrane.org/CD004953
+  notes: |
+    Sustained inflation makes little to no difference to survival. It may reduce ventilation need, but overall evidence doesn't support its use over standard methods.
+
+- question: Does acupuncture help people quit smoking?
+  answer: No.
+  url: https://www.cochrane.org/CD000009
+  notes: |
+    Acupuncture shows weak short-term benefit but no lasting effect at 6+ months. It's less effective than nicotine replacement therapy and no better than counseling alone.
+
+- question: Should infants be exclusively breastfed for six months?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003517
+  notes: |
+    Six months of exclusive breastfeeding reduces gastrointestinal and respiratory infections. Mothers experience delayed menses and faster weight loss. No clear benefits for allergies.
+
+- question: Do drainage tubes after breast cancer surgery reduce complications?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD006823
+  notes: |
+    Drains reduce fluid collection (seroma) by about half. However, patients stay in hospital 1.5 days longer. No difference in infection or lymphedema.
+
+- question: Does St. John's wort help treat depression?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000448
+  notes: |
+    St. John's wort is similarly effective as standard antidepressants with fewer side effects. Products vary greatly and can interact with other medications.
+
+- question: Does behavioral therapy help with chronic low back pain?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD002014
+  notes: |
+    Operant and cognitive behavioral therapies are more effective than waiting list in the short term. No clear advantage over group exercise in the longer term.
+
+- question: Does protective ventilation with lower volumes improve respiratory failure outcomes?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003844
+  notes: |
+    Lower tidal volume ventilation decreases short-term deaths by 26% in patients with acute respiratory failure. Long-term effects are uncertain.
+
+- question: Does information-only education improve asthma outcomes?
+  answer: No.
+  url: https://www.cochrane.org/CD001005
+  notes: |
+    Information-only education doesn't reduce hospitalizations, doctor visits, or medication use for asthma. It may improve symptom perception but not overall health outcomes.
+
+- question: Does electrotherapy help with neck pain?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD004251
+  notes: |
+    Some modalities like TENS might be more effective than placebo, but evidence quality is very low. No definite statements can be made about effectiveness.
+
+- question: Should metastatic breast cancer be treated first with chemotherapy or hormonal therapy?
+  answer: Hormonal therapy first is preferred.
+  url: https://www.cochrane.org/CD002747
+  notes: |
+    Chemotherapy has higher response rates but similar survival. Hormonal therapy has fewer side effects. Recommended first except for rapidly progressive disease.
+
+- question: Do counseling interventions help heart attack patients quit smoking?
+  answer: Yes, in certain cases.
+  url: https://www.cochrane.org/CD006886
+  notes: |
+    Interventions lasting more than one month help patients quit (46% vs 37% success). Brief single sessions don't work. Long-term benefits beyond 12 months are unclear.
+
+- question: Does chlorpromazine help treat schizophrenia?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000284
+  notes: |
+    Chlorpromazine reduces relapse and improves symptoms, but causes significant side effects including sedation, movement disorders, and weight gain.
+
+- question: Does non-invasive brain stimulation help with chronic pain?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD008208
+  notes: |
+    rTMS and tDCS may produce small, short-term pain reductions, but effects are not clinically important. Evidence quality is very low. Seizures have been reported with rTMS.
+
+- question: Is single inhaler therapy better than separate inhalers for asthma?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD007313
+  notes: |
+    Single inhaler therapy probably reduces flare-ups requiring oral steroids. Evidence for reducing hospitalizations is weak, and more people discontinue due to side effects.
+
+- question: Does exercise help with weight loss?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003817
+  notes: |
+    Exercise combined with diet produces greater weight loss than diet alone. Higher intensity is more effective. Exercise improves cardiovascular risk factors even without weight loss.
+
+- question: Does chondroitin help with osteoarthritis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD005614
+  notes: |
+    Chondroitin may provide small, short-term pain relief (about 10 points on 100-point scale). Benefits disappear in high-quality studies. Evidence is inconsistent.
+
+- question: Do psychosocial interventions help pregnant women quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001055
+  notes: |
+    Counseling, feedback, and financial incentives are effective. Health education and peer support are not clearly effective. Interventions reduce low birthweight by 17%.
+
+- question: Does individual counseling help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD001292
+  notes: |
+    Individual counseling from trained therapists increases quit rates from 7% to 10-12%. More intensive counseling shows modest additional benefits. High-quality evidence.
+
+- question: Do antibiotics help with the common cold?
+  answer: No.
+  url: https://www.cochrane.org/CD000247
+  notes: |
+    Antibiotics provide no benefit for the common cold or acute purulent rhinitis. They cause significant adverse effects and contribute to antibiotic resistance. Routine use is not recommended.
+
+- question: Does long-term hormone therapy benefit postmenopausal women?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD004143
+  notes: |
+    Combined hormone therapy reduces fractures but increases breast cancer, stroke, and blood clot risks. Estrogen-only therapy reduces fractures with less cancer risk but may increase stroke. Benefits depend on individual circumstances.
+
+- question: Do e-cigarettes help people quit smoking?
+  answer: Yes.
+  url: https://www.cochrane.org/CD010216
+  notes: |
+    Nicotine e-cigarettes help people quit smoking more effectively than nicotine replacement therapy. About 8-11% quit with e-cigarettes vs 6% with patches or gum. They work better than non-nicotine e-cigarettes.
+
+- question: Does colchicine prevent heart attacks and strokes?
+  answer: Yes.
+  url: https://www.cochrane.org/CD014808
+  notes: |
+    Low-dose colchicine reduces heart attack and stroke risk in people with cardiovascular disease. However, it doesn't reduce death risk. May cause mild gastrointestinal side effects.
+
+- question: Does HPV vaccination prevent cervical cancer?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015363
+  notes: |
+    HPV vaccination reduces cervical cancer by about 80% when given before age 16. It also reduces pre-cancerous lesions and genital warts. Evidence from 132 million people shows it's safe with no increased infertility risk.
+
+- question: Do interventions help people quit vaping?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD016058
+  notes: |
+    Text messaging and varenicline may help people quit vaping, but evidence is limited. More research is needed on effective vaping cessation methods. Only 15 small studies available.
+
+- question: Does cyproterone acetate help with unwanted hair growth in women?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD001125
+  notes: |
+    Cyproterone acetate is similar to most alternatives for treating hirsutism. It shows modest advantages over spironolactone at 6 months. Larger studies needed for firm conclusions.
+
+- question: Does non-invasive ventilation help people with cystic fibrosis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD002769
+  notes: |
+    Evidence is uncertain whether CPAP or BiPAP helps people with cystic fibrosis. Some find it helpful while others discontinue due to discomfort. High-quality long-term studies are needed.
+
+- question: Does breast surgery improve survival in metastatic breast cancer?
+  answer: No.
+  url: https://www.cochrane.org/CD011276
+  notes: |
+    Breast surgery does not improve overall survival for women with metastatic breast cancer. It controls local disease but doesn't prevent spread. May have modest benefit for luminal-type tumors specifically.
+
+- question: Does surgery for septate uterus improve pregnancy outcomes?
+  answer: No.
+  url: https://www.cochrane.org/CD008576
+  notes: |
+    Hysteroscopic septum resection shows little to no difference in live birth rates compared to watchful waiting. May even increase miscarriage risk. More research needed.
+
+- question: Do immunosuppressant eye drops help blepharitis?
+  answer: No.
+  url: https://www.cochrane.org/CD013550
+  notes: |
+    Topical corticosteroids and cyclosporine make little to no difference for blepharitis symptoms. Conventional lid hygiene and warm compresses remain the valid treatment approach.
+
+- question: Do decongestants or antihistamines help ear infections in children?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015839
+  notes: |
+    Evidence is unclear whether decongestants or antihistamines help acute middle ear infections in children. Studies were too small and poorly designed for reliable conclusions.
+
+- question: Does nucleoplasty help cervical disc herniation?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD011852
+  notes: |
+    Nucleoplasty may reduce neck and arm pain at 3 months compared to conservative treatment, but shows little effect on function or quality of life. Insufficient evidence to support its use.
+
+- question: Do DPP-4 inhibitors prevent complications in diabetic kidney disease?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015906
+  notes: |
+    Despite 59 studies, it's unclear whether DPP-4 inhibitors prevent death, heart problems, or kidney complications in people with both chronic kidney disease and diabetes. More rigorous trials needed.
+
+- question: Is high-frequency ventilation better for sick newborns?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD002974
+  notes: |
+    Unable to support or refute high-frequency oscillatory ventilation for term infants with severe lung problems. May increase mortality. Only 3 small studies available.
+
+- question: Do thiazolidinediones prevent complications in diabetic kidney disease?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015907
+  notes: |
+    Insufficient evidence on whether thiazolidinediones prevent death, heart problems, or kidney issues in people with both chronic kidney disease and diabetes. More research needed.
+
+- question: Does tirzepatide help with weight loss?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016018
+  notes: |
+    Tirzepatide likely produces sustained weight loss. However, long-term impact on other health outcomes is uncertain. All studies were manufacturer-funded, raising conflict of interest concerns.
+
+- question: Does semaglutide help with weight loss?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015092
+  notes: |
+    Semaglutide produces more weight loss than placebo over 24+ months. However, more people discontinue due to side effects long-term, and it shows little effect on quality of life or cardiovascular events. 17/18 studies were manufacturer-funded.
+
+- question: Does molnupiravir help treat COVID-19?
+  answer: No.
+  url: https://www.cochrane.org/CD015381
+  notes: |
+    Molnupiravir probably makes little to no difference in death or hospitalization rates for mild to moderate COVID-19 outpatients. Improves early viral clearance but benefit diminishes by day 14.
+
+- question: Does skin-to-skin contact after birth help newborns?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003519
+  notes: |
+    Skin-to-skin contact promotes exclusive breastfeeding and improves infant temperature and blood sugar levels. Recommended for all healthy full-term and late preterm infants regardless of birth mode.
+
+- question: Does acupuncture help polycystic ovary syndrome?
+  answer: No.
+  url: https://www.cochrane.org/CD007689
+  notes: |
+    Acupuncture shows little or no effect on live birth, pregnancy, or ovulation rates compared to sham acupuncture. May actually increase adverse events. Current evidence doesn't support use for PCOS fertility.
+
+- question: Are restrictive blood transfusion thresholds safe?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002042
+  notes: |
+    Waiting to transfuse until hemoglobin is 7-8 g/dL (vs 9-10 g/dL) doesn't increase death, heart attack, stroke, or infection risk. Reduces transfusions by 42%. Exception: brain injury patients may benefit from liberal approach.
+
+- question: Does intravenous immunoglobulin help myasthenia gravis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013801
+  notes: |
+    IVIg may slightly improve symptoms for up to 6 months, but effects may not be clinically meaningful. Causes headaches in up to 1/3 of patients. Plasma exchange may be more beneficial. Low-quality evidence.
+
+- question: Is propofol better than traditional sedatives for colonoscopy?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD006268
+  notes: |
+    Propofol may improve recovery time and patient satisfaction with little effect on completion rates or complications. Non-anesthesiologist administration is as safe as anesthesiologist-directed.
+
+- question: Does cognitive behavioral therapy help insomnia in cancer patients?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015176
+  notes: |
+    CBT-I may slightly reduce insomnia severity and improve sleep quality in cancer patients, but findings are very uncertain. Benefits are modest and depend on availability, cost, and patient preference.
+
+- question: Does cryotherapy help after knee replacement surgery?
+  answer: No.
+  url: https://www.cochrane.org/CD007911
+  notes: |
+    Cold therapy may reduce blood loss by 264mL and pain by 1.6 points (out of 10), but these benefits may be too small to justify its use. Effects on function and adverse events are uncertain.
+
+- question: Does continuous combined hormone therapy protect against endometrial cancer?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000402
+  notes: |
+    Continuous combined hormone therapy has similar endometrial hyperplasia risk to placebo. Unopposed estrogen increases risk at all doses. Sequential combined therapy also increases risk. Cancer effects are uncertain.
+
+- question: Does riboflavin lower blood pressure?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015464
+  notes: |
+    The effect of vitamin B2 supplements on blood pressure is uncertain. Only 4 small studies with 374 people available. Large, well-conducted trials are needed.
+
+- question: Do treatments help impulsive behaviors in Parkinson's disease?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015046
+  notes: |
+    We don't know if medications (amantadine, naltrexone, clonidine) or CBT help reduce impulsive-compulsive behaviors in Parkinson's. Studies are too small and limited. More research needed.
+
+- question: Does liraglutide help with weight loss?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016017
+  notes: |
+    Liraglutide increases the proportion achieving 5%+ weight loss. However, effects on quality of life and mortality are uncertain, and it may increase adverse events. 22 studies were manufacturer-funded.
+
+- question: Do nicotine pouches help people quit smoking?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD016220
+  notes: |
+    Uncertain if nicotine pouches help quit smoking. May have lower quit rates than e-cigarettes. No serious short-term harms found, but evidence is very limited. More research urgently needed.
+
+- question: Should older adults take blood pressure medication?
+  answer: Yes.
+  url: https://www.cochrane.org/CD000028
+  notes: |
+    Blood pressure medications lower death risk and probably reduce heart attacks and strokes in adults 60+. Thiazide diuretics are effective first-line treatment. Higher withdrawal rates due to side effects.
+
+- question: Do work breaks prevent musculoskeletal problems?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD012886
+  notes: |
+    Not enough good-quality evidence to draw reliable conclusions. Additional breaks may reduce back pain in office workers, but evidence is very uncertain. Larger studies needed.
+
+- question: Are there effective medications for cannabis use disorder?
+  answer: No.
+  url: https://www.cochrane.org/CD008940
+  notes: |
+    THC preparations, CBD, N-acetylcysteine, oxytocin, and PF-04457845 are probably ineffective for stopping cannabis use. No approved medications exist. Psychological treatments are the only recommended approach.
+
+- question: Do RSV vaccines work?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016131
+  notes: |
+    RSV prefusion vaccines reduce respiratory illness by 77% in older adults. Maternal vaccination reduces infant hospitalizations by 54% and severe cases by 74%. Little difference in serious adverse effects.
+
+- question: Should people with mild hypertension take blood pressure medication?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006742
+  notes: |
+    Medications may not reduce death or cardiovascular disease risk in people with mild hypertension (140-159/90-99) and no prior heart disease. May reduce stroke but increase side effect withdrawals.
+
+- question: Do antibiotic eye drops prevent infection after corneal abrasion?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD014617
+  notes: |
+    Not enough evidence that antibiotic eye drops or ointments prevent infections after corneal scratches. We don't know if one antibiotic is better than another. Similar mild side effects across groups.
+
+- question: Do progestagens help endometriosis pain?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002122
+  notes: |
+    Oral progestagens probably reduce overall pain and period pain at 3 months compared to placebo. Compared to other hormonal treatments, evidence is less certain due to limited studies.
+
+- question: Does remote ischaemic conditioning help prevent stroke?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD012503
+  notes: |
+    RIC probably slightly reduces recurrent stroke and may improve recovery. Involves briefly restricting blood flow to a limb with a blood pressure cuff. Minor side effects like arm pain are common. More research needed.
+
+- question: Does omega-3 help diabetic nerve damage?
+  answer: No.
+  url: https://www.cochrane.org/CD014623
+  notes: |
+    Little to no benefit of omega-3 supplements for peripheral neuropathy symptoms or quality of life in diabetics. Only 2 small studies (87 people total). Inadequate data to draw conclusions.
+
+- question: Is pyronaridine-artesunate effective for malaria?
+  answer: Yes.
+  url: https://www.cochrane.org/CD006404
+  notes: |
+    Pyronaridine-artesunate is effective for uncomplicated P. falciparum malaria, performing comparably to other artemisinin combinations. Treatment failure below 5%. May temporarily elevate liver enzymes.
+
+- question: Does strength training help stroke survivors?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016001
+  notes: |
+    Resistance training is safe for stroke survivors and increases muscle strength and balance. Little effect on walking speed. Long-term benefits and effects on disability are unclear.
+
+- question: Do probiotics prevent C. difficile diarrhea?
+  answer: Yes.
+  url: https://www.cochrane.org/CD006095
+  notes: |
+    Probiotics may prevent C. difficile-associated diarrhea, especially in high-risk patients (70% risk reduction). For every 65 people using probiotics, one case may be prevented. Benefits less clear in low-risk patients.
+
+- question: Does wrist acupressure prevent post-surgical nausea?
+  answer: Yes.
+  url: https://www.cochrane.org/CD003281
+  notes: |
+    PC6 acupoint stimulation (acupressure bands, needles) combined with anti-nausea medication reduces postoperative nausea and vomiting. May cause minor side effects. Evidence quality is low.
+
+- question: Do interventions prevent falls in care home residents?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016064
+  notes: |
+    Customized multifactorial interventions probably reduce falls in care facilities. Exercise and vitamin D supplementation probably reduce fall rates. Medication optimization shows minimal benefit.
+
+- question: Does calcium before pregnancy prevent pre-eclampsia?
+  answer: No.
+  url: https://www.cochrane.org/CD011192
+  notes: |
+    Calcium supplements started before pregnancy show little to no difference in pre-eclampsia or pregnancy loss. High dropout rates limit confidence. Current evidence neither supports nor refutes routine use.
+
+- question: Is opioid treatment effective in primary care vs specialty clinics?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013672
+  notes: |
+    Unclear if primary care opioid treatment differs from specialty clinics for retention or adverse effects. May improve avoidance of non-prescribed opioids. Evidence is low quality and limited to lower-risk patients.
+
+- question: Does VR training help endoscopy trainees?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD008237
+  notes: |
+    VR simulation may have little effect on overall competency but trainees are probably better able to complete procedures independently. Insufficient evidence to recommend replacing traditional patient-based training.
+
+- question: Should women get HPV vaccine after cervical surgery?
+  answer: Yes.
+  url: https://www.cochrane.org/CD016121
+  notes: |
+    HPV vaccination after conisation may reduce risk of precancerous lesions. Effects on cervical cancer rates are uncertain. Minor side effects common, severe allergic reactions in ~1%.
+
+- question: Does misoprostol help with IUD insertion?
+  answer: No.
+  url: https://www.cochrane.org/CD015584
+  notes: |
+    Misoprostol makes little to no difference to pain or ease of IUD placement. May help after failed insertion attempts. Increases abdominal cramping and diarrhea side effects.
+
+- question: Is single-incision laparoscopic appendectomy better?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD009022
+  notes: |
+    Single-incision appendix removal probably has better cosmetic outcomes but higher risk of needing to switch to multiple incisions. Similar complication risks, hospital stays, and recovery times.
+
+- question: Is there a best timing method for intrauterine insemination?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006942
+  notes: |
+    Not enough evidence to know if different timing methods (hCG, LH detection) are safer or more effective than others. No clear evidence any method improves live birth rates.
+
+- question: Does combined cardio and strength training help stroke survivors?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD016002
+  notes: |
+    Combined training may cause small improvements in fitness, disability, walking speed, and balance. Well tolerated with no serious adverse events. Long-term benefits uncertain.
+
+- question: Should children with hemophilia receive preventive clotting factor?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD003429
+  notes: |
+    Preventive clotting factor therapy may reduce annual bleeding rates in children with severe hemophilia. However, likely no difference in joint damage and may not improve quality of life.
+
+- question: Does ketamine help chronic pain?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015373
+  notes: |
+    Unclear whether ketamine or other NMDA antagonists (memantine, dextromethorphan) reduce chronic pain. IV ketamine may cause dissociation, nausea, and vomiting. Very low quality evidence.
+
+- question: Does vitamin D in pregnancy prevent childhood asthma?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013396
+  notes: |
+    High-dose vitamin D in pregnancy likely helps prevent childhood wheeze but effects on asthma are uncertain. Vitamin D in early childhood may have little effect. Limited evidence overall.
+
+- question: Does first aid training improve emergency care?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015538
+  notes: |
+    First aid training probably increases knowledge and skills in the short term. Unknown whether it actually improves real-world emergency care outcomes. No studies measured actual health outcomes.
+
+- question: Which medications work best for psoriasis?
+  answer: Yes, biologics.
+  url: https://www.cochrane.org/CD011535
+  notes: |
+    Biologic medicines work best to clear psoriasis after 6 months. Top performers: infliximab, ixekizumab, bimekizumab, risankizumab. Longer studies needed for safety data.
+
+- question: Does natalizumab help multiple sclerosis?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015123
+  notes: |
+    Natalizumab reduces relapses and disability in relapsing-remitting MS after 2 years. Less effective for secondary progressive MS. Most studies only 24 months with limited diversity.
+
+- question: Does desmopressin help bedwetting in children?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD002112
+  notes: |
+    Desmopressin may provide about one additional dry night per week. Similar effectiveness to alarm therapy. Side effects include dizziness, headaches, and low sodium. Low quality evidence.
+
+- question: Do trauma systems improve injury outcomes?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD012500
+  notes: |
+    Insufficient evidence to determine if organized trauma systems improve outcomes. Only 4 studies found with inconsistent results. No studies from resource-limited countries.
+
+- question: Does palivizumab prevent RSV in high-risk children?
+  answer: Yes.
+  url: https://www.cochrane.org/CD013757
+  notes: |
+    Systemic palivizumab reduces RSV hospitalizations and wheezing days in high-risk children (premature, heart/lung problems). Little effect on mortality. Intranasal form may actually increase hospitalizations.
+
+- question: Is CPAP better than theophylline for preterm apnea?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD001072
+  notes: |
+    Very uncertain evidence from a single 40-year-old study with 32 infants. Both treatments largely replaced by modern nasal CPAP and caffeine. No meaningful difference detected.
+
+- question: Do vaginal lasers help stress urinary incontinence?
+  answer: No.
+  url: https://www.cochrane.org/CD013643
+  notes: |
+    Vaginal lasers may have little to no effect on stress urinary incontinence. Any improvement is small and may not be noticeable to patients. No major adverse events reported.
+
+- question: Does telerehabilitation help neck pain?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD014428
+  notes: |
+    Psychological/educational interventions via telehealth likely improve function. Exercise-based telerehabilitation may slightly reduce pain. Overall evidence is very uncertain and inconclusive.
+
+- question: Does exercise therapy help ICU delirium?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015830
+  notes: |
+    Exercise therapy may reduce delirium duration and shorten ICU stay. Appears safe with no harmful side effects. Benefits and risks are unclear due to limited evidence.
+
+- question: Should anal intraepithelial neoplasia be treated?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD009244
+  notes: |
+    Treatment may reduce anal cancer development compared to active monitoring. No single treatment proven superior. Evidence is very uncertain, especially for HIV-negative populations.
+
+- question: Is linked color imaging better for colonoscopy?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015476
+  notes: |
+    Linked color imaging slightly improves detection of precancerous growths and polyps compared to white-light colonoscopy. Similar safety profiles. Unclear if this reduces cancer rates.
+
+- question: Does shockwave therapy help erectile dysfunction?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013166
+  notes: |
+    Low-intensity shockwave therapy may have a small improving effect on erections, but it may not be noticeable to men. Side effects are uncommon. Low confidence in findings due to study limitations.
+
+- question: Does surgery help brain hemorrhage?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015387
+  notes: |
+    Surgery plus standard care may increase functional independence and reduce death compared to medical management alone. Craniotomy likely reduces mortality. Minimally invasive surgery may improve outcomes.
+
+- question: Are automated ventilator weaning systems better?
+  answer: Yes.
+  url: https://www.cochrane.org/CD009235
+  notes: |
+    Automated systems reduce ventilator time by ~24% (1.7 days), shorten ICU/hospital stays, and lower reintubation needs. Little effect on mortality. Moderate evidence supports adoption in adult critical care.
+
+- question: Should midazolam be used for newborn sedation?
+  answer: No.
+  url: https://www.cochrane.org/CD002052
+  notes: |
+    Not enough evidence to support midazolam use in babies, especially preterm. Higher neurological complications vs morphine. Longer ICU stays. No studies measured pain relief or brain development effects.
+
+- question: Do phosphate binders help kidney disease patients?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006023
+  notes: |
+    Sevelamer may reduce death vs calcium binders in dialysis patients. Both sevelamer and lanthanum cause less hypercalcemia. No clear cardiovascular benefits. Constipation and nausea common.
+
+- question: Is peritoneal drainage better than surgery for infant bowel disease?
+  answer: No.
+  url: https://www.cochrane.org/CD006182
+  notes: |
+    Peritoneal drainage shows little difference in death or mental impairment vs laparotomy. Associated with increased cerebral palsy risk. Half of drainage patients still need surgery later.
+
+- question: Does sustained lung inflation help newborn resuscitation?
+  answer: No.
+  url: https://www.cochrane.org/CD004953
+  notes: |
+    Sustained lung inflation makes little to no difference in newborn mortality. May slightly reduce need for mechanical ventilation. No evidence to support its use over standard resuscitation.
+
+- question: Does manual rotation help during labor?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD009298
+  notes: |
+    Manual rotation may result in little to no difference in operative delivery rates. Cannot confirm if it prevents cesarean or instrumental births. No deaths reported. More trials needed.
+
+- question: Do perioperative interventions help pelvic prolapse surgery?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013105
+  notes: |
+    Limited evidence to recommend any perioperative treatment. One key finding: catheters left >24 hours increase UTI risk 3-8 times. Insufficient data for most interventions studied.
+
+- question: Is surgical or medical abortion safer in second trimester?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006714
+  notes: |
+    Both surgery and medicines may be safe and effective. Medical abortion may have higher incomplete abortion risk and slightly more bleeding. Surgical may have less pain. Very low quality evidence.
+
+- question: Does rituximab help myasthenia gravis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD014574
+  notes: |
+    Very uncertain effects on symptom severity and daily activities. Probably causes large reduction in relapse needing rescue therapy (220 vs 490 per 1000). Only 2 studies with 99 participants.
+
+- question: Do skin products prevent incontinence-associated dermatitis?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD011627
+  notes: |
+    Very uncertain if any treatment works better than others. Specialized cleansers might be better than soap/water. Combining cleansers with moisturizers might help. Very low certainty evidence.
+
+- question: Does virtual reality help stroke rehabilitation?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD008349
+  notes: |
+    VR may slightly improve arm function and balance, probably reduces activity limitation. Best as supplement to usual care, not replacement. Minor side effects like headaches. Moderate to low quality evidence.
+
+- question: Do infant probiotics prevent allergies?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006475
+  notes: |
+    Probiotics may slightly reduce eczema by age 2 but show little to no difference for asthma, allergic rhinitis, or cow's milk allergy. Effects on food allergies uncertain. No serious adverse effects.
+
+- question: Does progestogen prevent recurrent miscarriage?
+  answer: No.
+  url: https://www.cochrane.org/CD003511
+  notes: |
+    Progestogen probably makes little to no difference to miscarriage or live birth rates for women with unexplained recurrent miscarriage. Regardless of delivery method (oral, injection, vaginal).
+
+- question: Do corticosteroids help treat sepsis?
+  answer: Yes.
+  url: https://www.cochrane.org/CD002243
+  notes: |
+    Corticosteroids probably reduce death at 28 days and may shorten ICU/hospital stays. Little effect on mortality beyond 3 months. May increase blood sugar, infections, and muscle weakness.
+
+- question: Should preterm infants with PDA be treated early?
+  answer: No.
+  url: https://www.cochrane.org/CD013278
+  notes: |
+    Early drug treatment probably makes little to no difference in mortality. Very early ibuprofen may increase death in extremely preterm infants (<28 weeks). Only benefit: 5 days shorter hospitalization.
+
+- question: Do diet and activity programs prevent obesity in toddlers?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD015326
+  notes: |
+    Combined dietary/activity interventions may have very modest BMI benefits at 15+ months. Diet or activity alone show little effect. Modest improvement considered meaningful from public health perspective.
+
+- question: Is warfarin better than aspirin for heart failure?
+  answer: No.
+  url: https://www.cochrane.org/CD003333
+  notes: |
+    Warfarin and aspirin probably both reduce mortality with little difference between them. However, warfarin probably doubles major bleeding risk. No clear advantage to prescribing warfarin over aspirin.
+
+- question: Do topical antibiotics help chronic ear infections?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013051
+  notes: |
+    Very uncertain if topical antibiotics reduce ear discharge. Some indication they may help vs placebo. Insufficient evidence on which antibiotic works best. Harmful effects poorly documented.
+
+- question: Do GnRH agonists help premenstrual syndrome?
+  answer: Yes.
+  url: https://www.cochrane.org/CD011330
+  notes: |
+    GnRH agonists improve PMS symptoms but many discontinue due to menopausal side effects (hot flushes). Long-term use problematic due to bone loss. Add-back therapy shows low-certainty benefit.
+
+- question: Do fertility preservation methods work for cancer patients?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD012891
+  notes: |
+    Ovarian suppression may reduce ovarian insufficiency. Insufficient evidence on controlled ovarian hyperstimulation for live births. No studies directly compare methods. More research needed.
+
+- question: Does yoga help cancer-related fatigue?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015520
+  notes: |
+    Yoga after anticancer therapy probably reduces short-term fatigue. Effects during treatment are uncertain. Long-term benefits unknown. More research needed on sustainability.
+
+- question: Do strengthening exercises help patellar tendinopathy?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013078
+  notes: |
+    Evidence is very uncertain. May make little to no difference to function compared to no treatment or injections. Unclear if better than surgery for return-to-sport.
+
+- question: Do robotic devices help stroke patients walk again?
+  answer: Yes.
+  url: https://www.cochrane.org/CD006185
+  notes: |
+    Robotic devices plus physiotherapy probably help walk independently after stroke, especially in first 3 months. For every 9 treated, 1 extra person walks independently. No speed improvement.
+
+- question: Do atypical antipsychotics help autism symptoms?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD014965
+  notes: |
+    Risperidone and aripiprazole may reduce irritability in autistic children. Lurasidone probably makes little difference. Uncertainty about aggression, weight gain, and effects in adults.
+
+- question: Is telemedicine safe for medical abortion?
+  answer: Yes.
+  url: https://www.cochrane.org/CD013764
+  notes: |
+    Telemedicine for early pregnancy medical abortion may have similar safety, effectiveness, and acceptability as in-clinic care. Post-abortion telemedicine actually improves follow-up adherence.
+
+- question: Are surgical drains beneficial after pancreatic surgery?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD010583
+  notes: |
+    Unclear if drains reduce complications after pancreatic surgery. Early drain removal probably slightly reduces abdominal infection in low-risk patients. Very uncertain evidence overall.
+
+- question: Is one FET preparation cycle better than others?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD003414
+  notes: |
+    Insufficient evidence to recommend natural cycle, hormone therapy, or ovulation induction for frozen embryo transfer. Low quality evidence across all comparisons. Larger studies needed.
+
+- question: Do vaccines help blood cancer patients prevent infections?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD015530
+  notes: |
+    Herpes zoster vaccines may decrease infection risk up to 21 months but don't affect mortality. COVID-19 and influenza vaccine evidence is very uncertain. Limited quality evidence overall.
+
+- question: Does ustekinumab help Crohn's disease?
+  answer: Yes.
+  url: https://www.cochrane.org/CD007572
+  notes: |
+    Ustekinumab is more effective than placebo at achieving remission (74% vs 87% failure at 8 weeks). Probably doesn't cause increased severe adverse effects. Insufficient evidence vs other medications.
+
+- question: Does sustained-release naltrexone help opioid dependence?
+  answer: Yes, mildly.
+  url: https://www.cochrane.org/CD006140
+  notes: |
+    Better than standard care for reducing illicit opioid use. Probably slightly worse than methadone/buprenorphine. Requires prior detoxification. More research needed on long-term outcomes.
+
+- question: Does the DASH diet prevent heart disease?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD013729
+  notes: |
+    Unclear if DASH diet reduces heart attacks, strokes, or cardiovascular death. Studies were small with short follow-up. No studies in people with existing heart disease. Larger long-term studies needed.
+
+- question: Do typhoid conjugate vaccines prevent typhoid fever?
+  answer: Yes.
+  url: https://www.cochrane.org/CD015746
+  notes: |
+    Typhoid conjugate vaccines may cause a large decrease in typhoid fever with protection lasting up to 4 years. Little difference compared to other typhoid vaccines. More research needed in endemic countries.
+
+- question: Does melatonin help cancer patients?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD010145
+  notes: |
+    Effects on quality of life and sleep are unclear. Probably reduces fatigue and may reduce nausea when added to standard treatment. Insufficient data to recommend for or against use.
+
+- question: Is one treatment best for ulnar nerve compression at the elbow?
+  answer: Maybe.
+  url: https://www.cochrane.org/CD006839
+  notes: |
+    Simple nerve release, repositioning, and endoscopic surgery show similar results. Written info alone as effective as info plus splints/exercises for mild cases. Dextrose injections may help.
+
+- question: Do PPIs prevent ulcers from NSAIDs?
+  answer: Yes.
+  url: https://www.cochrane.org/CD014585
+  notes: |
+    PPIs probably reduce new ulcers (36 vs 119 per 1000 people) and slightly decrease indigestion compared to placebo. May increase ulcers compared to H2-blockers or misoprostol.
