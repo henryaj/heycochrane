@@ -29,18 +29,12 @@
             %input#search-input.form-control{:type => "text", :placeholder => "Search questions... (e.g., 'vitamin', 'cancer', 'exercise')"}
           .mt-2.d-flex.justify-content-between.align-items-center
             %span#result-count.text-muted
-            .d-flex.align-items-center
-              %button#filter-toggle-btn{:type => "button"}
-                %svg{:width => "16", :height => "16", :viewBox => "0 0 24 24", :fill => "none", :stroke => "currentColor", :"stroke-width" => "2"}
-                  %polygon{:points => "22,3 2,3 10,12.46 10,19 14,21 14,12.46"}
-                Filter
-                %span#active-filter-count
-              .sort-options.ml-2
-                %label.mr-2 Sort by:
-                %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
-                  %option{:value => "default"} Default
-                  %option{:value => "latest"} Latest
-                  %option{:value => "interest"} Most Interesting
+            .sort-options
+              %label.mr-2 Sort by:
+              %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
+                %option{:value => "default"} Default
+                %option{:value => "latest"} Latest
+                %option{:value => "interest"} Most Interesting
 
       .row.mb-3#tag-filter-section
         .col-12
@@ -63,23 +57,6 @@
             %p.text-muted
               Definitely not to be construed as medical advice • Not affiliated with Cochrane • by
               %a{:href => "http://henrystanley.com"} Henry Stanley
-
-    / Filter Sheet (mobile only)
-    #filter-sheet-overlay.filter-overlay
-    #filter-sheet.filter-sheet
-      .filter-sheet-drag-handle
-        %span.drag-indicator
-      .filter-sheet-header
-        %h3 Filters
-        %button#filter-sheet-close.filter-sheet-close{"aria-label" => "Close filters"}
-          %svg{:width => "24", :height => "24", :viewBox => "0 0 24 24", :fill => "none", :stroke => "currentColor", :"stroke-width" => "2"}
-            %line{:x1 => "18", :y1 => "6", :x2 => "6", :y2 => "18"}
-            %line{:x1 => "6", :y1 => "6", :x2 => "18", :y2 => "18"}
-      .filter-sheet-content
-        #filter-sheet-tags
-      .filter-sheet-footer
-        %button#filter-sheet-clear Clear All
-        %button#filter-sheet-apply Apply
 
     / Scroll to top button
     %button#scroll-to-top.scroll-to-top{"aria-label" => "Scroll to top"}
@@ -278,21 +255,9 @@
           selectedTags = [tag];
         }
         renderTagButtons();
-        updateFilterCount();
         applyFilters();
       }
 
-      function updateFilterCount() {
-        const countBadge = document.getElementById('active-filter-count');
-        if (selectedTags.length > 0) {
-          countBadge.textContent = selectedTags.length;
-          countBadge.classList.add('visible');
-        } else {
-          countBadge.classList.remove('visible');
-        }
-      }
-
-      // Tag buttons (desktop)
       function renderTagButtons() {
         const container = document.getElementById('tag-buttons');
         const usedTags = new Set();
@@ -317,120 +282,6 @@
         });
 
         container.innerHTML = html;
-      }
-
-      // Filter sheet (mobile)
-      function openFilterSheet() {
-        const sheet = document.getElementById('filter-sheet');
-        const overlay = document.getElementById('filter-sheet-overlay');
-
-        renderFilterSheetTags();
-
-        sheet.classList.add('active');
-        overlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeFilterSheet() {
-        const sheet = document.getElementById('filter-sheet');
-        const overlay = document.getElementById('filter-sheet-overlay');
-
-        sheet.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-
-      function renderFilterSheetTags() {
-        const container = document.getElementById('filter-sheet-tags');
-        const usedTags = new Set();
-
-        allSummaries.forEach(s => {
-          (s.tags || []).forEach(tag => usedTags.add(tag));
-        });
-
-        const sortedTags = Array.from(usedTags).sort((a, b) => {
-          const nameA = (tagMetadata[a] || { name: a }).name.toLowerCase();
-          const nameB = (tagMetadata[b] || { name: b }).name.toLowerCase();
-          return nameA.localeCompare(nameB);
-        });
-
-        let html = '';
-        sortedTags.forEach(tag => {
-          const meta = tagMetadata[tag] || { name: tag };
-          const isSelected = selectedTags.includes(tag);
-          const btnClass = isSelected ? 'tag-filter-btn-selected' : 'tag-filter-btn';
-          html += `<span class="badge ${btnClass}" style="cursor: pointer;" data-tag="${tag}">${escapeHtml(meta.name)}</span>`;
-        });
-
-        container.innerHTML = html;
-
-        // Add click handlers
-        container.querySelectorAll('.badge').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const tag = btn.dataset.tag;
-            if (selectedTags.includes(tag)) {
-              selectedTags = [];
-            } else {
-              selectedTags = [tag];
-            }
-            renderFilterSheetTags();
-            updateFilterCount();
-          });
-        });
-      }
-
-      function initFilterSheet() {
-        const toggleBtn = document.getElementById('filter-toggle-btn');
-        const overlay = document.getElementById('filter-sheet-overlay');
-        const closeBtn = document.getElementById('filter-sheet-close');
-        const clearBtn = document.getElementById('filter-sheet-clear');
-        const applyBtn = document.getElementById('filter-sheet-apply');
-        const sheet = document.getElementById('filter-sheet');
-        const handle = sheet.querySelector('.filter-sheet-drag-handle');
-
-        toggleBtn?.addEventListener('click', openFilterSheet);
-        overlay?.addEventListener('click', closeFilterSheet);
-        closeBtn?.addEventListener('click', closeFilterSheet);
-
-        clearBtn?.addEventListener('click', () => {
-          selectedTags = [];
-          renderFilterSheetTags();
-          updateFilterCount();
-        });
-
-        applyBtn?.addEventListener('click', () => {
-          renderTagButtons();
-          applyFilters();
-          closeFilterSheet();
-        });
-
-        // Swipe to dismiss
-        let touchStartY = 0;
-        let touchCurrentY = 0;
-
-        handle?.addEventListener('touchstart', (e) => {
-          touchStartY = e.touches[0].clientY;
-          sheet.style.transition = 'none';
-        }, { passive: true });
-
-        handle?.addEventListener('touchmove', (e) => {
-          touchCurrentY = e.touches[0].clientY;
-          const diff = touchCurrentY - touchStartY;
-          if (diff > 0) {
-            sheet.style.transform = `translateY(${diff}px)`;
-          }
-        }, { passive: true });
-
-        handle?.addEventListener('touchend', () => {
-          sheet.style.transition = '';
-          const diff = touchCurrentY - touchStartY;
-          if (diff > 100) {
-            closeFilterSheet();
-          }
-          sheet.style.transform = '';
-          touchStartY = 0;
-          touchCurrentY = 0;
-        });
       }
 
       // Scroll to top
@@ -465,6 +316,5 @@
       // Initialize
       renderTagButtons();
       initInfiniteScroll();
-      initFilterSheet();
       initScrollToTop();
       renderInitialItems();

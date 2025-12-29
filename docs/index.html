@@ -32,22 +32,13 @@ Digestible summaries of
 </div>
 <div class="mt-2 d-flex justify-content-between align-items-center">
 <span class="text-muted" id="result-count"></span>
-<div class="d-flex align-items-center">
-<button id="filter-toggle-btn" type="button">
-<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16">
-<polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46"></polygon>
-</svg>
-Filter
-<span id="active-filter-count"></span>
-</button>
-<div class="sort-options ml-2">
+<div class="sort-options">
 <label class="mr-2">Sort by:</label>
 <select class="form-control form-control-sm" id="sort-select" style="width: auto; display: inline-block;">
 <option value="default">Default</option>
 <option value="latest">Latest</option>
 <option value="interest">Most Interesting</option>
 </select>
-</div>
 </div>
 </div>
 </div>
@@ -75,29 +66,6 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
 </p>
 </div>
 </div>
-</div>
-</div>
-<!-- Filter Sheet (mobile only) -->
-<div class="filter-overlay" id="filter-sheet-overlay"></div>
-<div class="filter-sheet" id="filter-sheet">
-<div class="filter-sheet-drag-handle">
-<span class="drag-indicator"></span>
-</div>
-<div class="filter-sheet-header">
-<h3>Filters</h3>
-<button aria-label="Close filters" class="filter-sheet-close" id="filter-sheet-close">
-<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24">
-<line x1="18" x2="6" y1="6" y2="18"></line>
-<line x1="6" x2="18" y1="6" y2="18"></line>
-</svg>
-</button>
-</div>
-<div class="filter-sheet-content">
-<div id="filter-sheet-tags"></div>
-</div>
-<div class="filter-sheet-footer">
-<button id="filter-sheet-clear">Clear All</button>
-<button id="filter-sheet-apply">Apply</button>
 </div>
 </div>
 <!-- Scroll to top button -->
@@ -297,21 +265,9 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
       selectedTags = [tag];
     }
     renderTagButtons();
-    updateFilterCount();
     applyFilters();
   }
   
-  function updateFilterCount() {
-    const countBadge = document.getElementById('active-filter-count');
-    if (selectedTags.length > 0) {
-      countBadge.textContent = selectedTags.length;
-      countBadge.classList.add('visible');
-    } else {
-      countBadge.classList.remove('visible');
-    }
-  }
-  
-  // Tag buttons (desktop)
   function renderTagButtons() {
     const container = document.getElementById('tag-buttons');
     const usedTags = new Set();
@@ -336,120 +292,6 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
     });
   
     container.innerHTML = html;
-  }
-  
-  // Filter sheet (mobile)
-  function openFilterSheet() {
-    const sheet = document.getElementById('filter-sheet');
-    const overlay = document.getElementById('filter-sheet-overlay');
-  
-    renderFilterSheetTags();
-  
-    sheet.classList.add('active');
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  
-  function closeFilterSheet() {
-    const sheet = document.getElementById('filter-sheet');
-    const overlay = document.getElementById('filter-sheet-overlay');
-  
-    sheet.classList.remove('active');
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  
-  function renderFilterSheetTags() {
-    const container = document.getElementById('filter-sheet-tags');
-    const usedTags = new Set();
-  
-    allSummaries.forEach(s => {
-      (s.tags || []).forEach(tag => usedTags.add(tag));
-    });
-  
-    const sortedTags = Array.from(usedTags).sort((a, b) => {
-      const nameA = (tagMetadata[a] || { name: a }).name.toLowerCase();
-      const nameB = (tagMetadata[b] || { name: b }).name.toLowerCase();
-      return nameA.localeCompare(nameB);
-    });
-  
-    let html = '';
-    sortedTags.forEach(tag => {
-      const meta = tagMetadata[tag] || { name: tag };
-      const isSelected = selectedTags.includes(tag);
-      const btnClass = isSelected ? 'tag-filter-btn-selected' : 'tag-filter-btn';
-      html += `<span class="badge ${btnClass}" style="cursor: pointer;" data-tag="${tag}">${escapeHtml(meta.name)}</span>`;
-    });
-  
-    container.innerHTML = html;
-  
-    // Add click handlers
-    container.querySelectorAll('.badge').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tag = btn.dataset.tag;
-        if (selectedTags.includes(tag)) {
-          selectedTags = [];
-        } else {
-          selectedTags = [tag];
-        }
-        renderFilterSheetTags();
-        updateFilterCount();
-      });
-    });
-  }
-  
-  function initFilterSheet() {
-    const toggleBtn = document.getElementById('filter-toggle-btn');
-    const overlay = document.getElementById('filter-sheet-overlay');
-    const closeBtn = document.getElementById('filter-sheet-close');
-    const clearBtn = document.getElementById('filter-sheet-clear');
-    const applyBtn = document.getElementById('filter-sheet-apply');
-    const sheet = document.getElementById('filter-sheet');
-    const handle = sheet.querySelector('.filter-sheet-drag-handle');
-  
-    toggleBtn?.addEventListener('click', openFilterSheet);
-    overlay?.addEventListener('click', closeFilterSheet);
-    closeBtn?.addEventListener('click', closeFilterSheet);
-  
-    clearBtn?.addEventListener('click', () => {
-      selectedTags = [];
-      renderFilterSheetTags();
-      updateFilterCount();
-    });
-  
-    applyBtn?.addEventListener('click', () => {
-      renderTagButtons();
-      applyFilters();
-      closeFilterSheet();
-    });
-  
-    // Swipe to dismiss
-    let touchStartY = 0;
-    let touchCurrentY = 0;
-  
-    handle?.addEventListener('touchstart', (e) => {
-      touchStartY = e.touches[0].clientY;
-      sheet.style.transition = 'none';
-    }, { passive: true });
-  
-    handle?.addEventListener('touchmove', (e) => {
-      touchCurrentY = e.touches[0].clientY;
-      const diff = touchCurrentY - touchStartY;
-      if (diff > 0) {
-        sheet.style.transform = `translateY(${diff}px)`;
-      }
-    }, { passive: true });
-  
-    handle?.addEventListener('touchend', () => {
-      sheet.style.transition = '';
-      const diff = touchCurrentY - touchStartY;
-      if (diff > 100) {
-        closeFilterSheet();
-      }
-      sheet.style.transform = '';
-      touchStartY = 0;
-      touchCurrentY = 0;
-    });
   }
   
   // Scroll to top
@@ -484,7 +326,6 @@ Definitely not to be construed as medical advice • Not affiliated with Cochran
   // Initialize
   renderTagButtons();
   initInfiniteScroll();
-  initFilterSheet();
   initScrollToTop();
   renderInitialItems();
 </script>
