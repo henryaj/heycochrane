@@ -1,0 +1,49 @@
+name: Build Site
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'template.haml'
+      - 'summaries.yml'
+      - 'docs/style.css'
+      - 'lib/**'
+      - 'Gemfile*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec rake build
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet docs/index.html; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git commit -m "Rebuild site from template"
+          git push
