@@ -1,6 +1,7 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, viewport-fit=cover"}
     %title Hey, Cochrane... 🤔
 
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :crossorigin => "anonymous"}
@@ -28,12 +29,18 @@
             %input#search-input.form-control{:type => "text", :placeholder => "Search questions... (e.g., 'vitamin', 'cancer', 'exercise')"}
           .mt-2.d-flex.justify-content-between.align-items-center
             %span#result-count.text-muted
-            .sort-options
-              %label.mr-2 Sort by:
-              %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
-                %option{:value => "default"} Default
-                %option{:value => "latest"} Latest
-                %option{:value => "interest"} Most Interesting
+            .d-flex.align-items-center
+              %button#filter-toggle-btn{:type => "button"}
+                %svg{:width => "16", :height => "16", :viewBox => "0 0 24 24", :fill => "none", :stroke => "currentColor", :"stroke-width" => "2"}
+                  %polygon{:points => "22,3 2,3 10,12.46 10,19 14,21 14,12.46"}
+                Filter
+                %span#active-filter-count
+              .sort-options.ml-2
+                %label.mr-2 Sort by:
+                %select#sort-select.form-control.form-control-sm{:style => "width: auto; display: inline-block;"}
+                  %option{:value => "default"} Default
+                  %option{:value => "latest"} Latest
+                  %option{:value => "interest"} Most Interesting
 
       .row.mb-3#tag-filter-section
         .col-12
@@ -41,10 +48,14 @@
 
       #summaries-container
 
-      .row.mt-4#pagination-container
-        .col-12.d-flex.justify-content-center
-          %nav{"aria-label" => "Page navigation"}
-            %ul#pagination.pagination
+      #scroll-sentinel
+
+      #loading-indicator{:style => "display: none;"}
+        .spinner
+        %p Loading more reviews...
+
+      #end-of-results{:style => "display: none;"}
+        %p All reviews loaded
 
       .footer
         .row
@@ -53,17 +64,50 @@
               Definitely not to be construed as medical advice • Not affiliated with Cochrane • by
               %a{:href => "http://henrystanley.com"} Henry Stanley
 
+    / Filter Sheet (mobile only)
+    #filter-sheet-overlay.filter-overlay
+    #filter-sheet.filter-sheet
+      .filter-sheet-drag-handle
+        %span.drag-indicator
+      .filter-sheet-header
+        %h3 Filters
+        %button#filter-sheet-close.filter-sheet-close{"aria-label" => "Close filters"}
+          %svg{:width => "24", :height => "24", :viewBox => "0 0 24 24", :fill => "none", :stroke => "currentColor", :"stroke-width" => "2"}
+            %line{:x1 => "18", :y1 => "6", :x2 => "6", :y2 => "18"}
+            %line{:x1 => "6", :y1 => "6", :x2 => "18", :y2 => "18"}
+      .filter-sheet-content
+        #filter-sheet-tags
+      .filter-sheet-footer
+        %button#filter-sheet-clear Clear All
+        %button#filter-sheet-apply Apply
+
+    / Scroll to top button
+    %button#scroll-to-top.scroll-to-top{"aria-label" => "Scroll to top"}
+      %svg{:width => "24", :height => "24", :viewBox => "0 0 24 24", :fill => "none", :stroke => "currentColor", :"stroke-width" => "2"}
+        %polyline{:points => "18 15 12 9 6 15"}
+
     %script{:src => "https://code.jquery.com/jquery-3.2.1.slim.min.js", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :crossorigin => "anonymous"}
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :crossorigin => "anonymous" }
 
     :javascript
       const allSummaries = #{summaries_json};
       const tagMetadata = #{tag_metadata_json};
-      const ITEMS_PER_PAGE = 20;
-      let currentPage = 1;
+
+      // State
+      const ITEMS_PER_LOAD = 20;
       let filteredSummaries = allSummaries;
       let selectedTags = [];
       let currentSort = 'default';
+      let displayedCount = 0;
+      let isLoading = false;
+      let allItemsLoaded = false;
+
+      // Utility functions
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
 
       function formatDate(dateStr) {
         if (!dateStr) return '';
@@ -76,6 +120,7 @@
         return `${day} ${month} ${year}`;
       }
 
+      // Render a single summary card
       function renderSummary(s) {
         const tagBadges = (s.tags || []).map(tag => {
           const meta = tagMetadata[tag] || { name: tag };
@@ -102,104 +147,101 @@
               <div class="tags-container">${tagBadges}</div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <hr>
-            </div>
-          </div>
         `;
       }
 
-      function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-      }
-
-      function renderPage() {
+      // Infinite scroll functions
+      function renderInitialItems() {
         const container = document.getElementById('summaries-container');
-        const start = (currentPage - 1) * ITEMS_PER_PAGE;
-        const end = start + ITEMS_PER_PAGE;
-        const pageItems = filteredSummaries.slice(start, end);
-
-        container.innerHTML = pageItems.map(renderSummary).join('');
-        renderPagination();
+        container.innerHTML = '';
+        displayedCount = 0;
+        allItemsLoaded = false;
+        document.getElementById('end-of-results').style.display = 'none';
+        loadMoreItems();
         updateResultCount();
       }
 
-      function renderPagination() {
-        const totalPages = Math.ceil(filteredSummaries.length / ITEMS_PER_PAGE);
-        const pagination = document.getElementById('pagination');
+      function loadMoreItems() {
+        if (isLoading || allItemsLoaded) return;
 
-        if (totalPages <= 1) {
-          pagination.innerHTML = '';
+        const remaining = filteredSummaries.length - displayedCount;
+        if (remaining <= 0) {
+          allItemsLoaded = true;
+          showEndOfResults();
           return;
         }
 
-        let html = '';
+        isLoading = true;
+        showLoadingIndicator();
 
-        // Previous button
-        html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-          <a class="page-link" href="#" onclick="goToPage(${currentPage - 1}); return false;">Previous</a>
-        </li>`;
+        // Small delay for smoother UX
+        setTimeout(() => {
+          const container = document.getElementById('summaries-container');
+          const itemsToLoad = Math.min(ITEMS_PER_LOAD, remaining);
+          const newItems = filteredSummaries.slice(displayedCount, displayedCount + itemsToLoad);
 
-        // Page numbers
-        const startPage = Math.max(1, currentPage - 2);
-        const endPage = Math.min(totalPages, currentPage + 2);
+          newItems.forEach(s => {
+            container.insertAdjacentHTML('beforeend', renderSummary(s));
+          });
 
-        if (startPage > 1) {
-          html += `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1); return false;">1</a></li>`;
-          if (startPage > 2) {
-            html += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
+          displayedCount += itemsToLoad;
+          isLoading = false;
+          hideLoadingIndicator();
+
+          if (displayedCount >= filteredSummaries.length) {
+            allItemsLoaded = true;
+            showEndOfResults();
           }
-        }
-
-        for (let i = startPage; i <= endPage; i++) {
-          html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
-            <a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>
-          </li>`;
-        }
-
-        if (endPage < totalPages) {
-          if (endPage < totalPages - 1) {
-            html += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
-          }
-          html += `<li class="page-item"><a class="page-link" href="#" onclick="goToPage(${totalPages}); return false;">${totalPages}</a></li>`;
-        }
-
-        // Next button
-        html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-          <a class="page-link" href="#" onclick="goToPage(${currentPage + 1}); return false;">Next</a>
-        </li>`;
-
-        pagination.innerHTML = html;
+        }, 100);
       }
 
-      function goToPage(page) {
-        const totalPages = Math.ceil(filteredSummaries.length / ITEMS_PER_PAGE);
-        if (page < 1 || page > totalPages) return;
-        currentPage = page;
-        renderPage();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      function showLoadingIndicator() {
+        document.getElementById('loading-indicator').style.display = 'block';
+        document.getElementById('end-of-results').style.display = 'none';
       }
 
+      function hideLoadingIndicator() {
+        document.getElementById('loading-indicator').style.display = 'none';
+      }
+
+      function showEndOfResults() {
+        document.getElementById('loading-indicator').style.display = 'none';
+        if (filteredSummaries.length > ITEMS_PER_LOAD) {
+          document.getElementById('end-of-results').style.display = 'block';
+        }
+      }
+
+      function initInfiniteScroll() {
+        const sentinel = document.getElementById('scroll-sentinel');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !isLoading && !allItemsLoaded) {
+              loadMoreItems();
+            }
+          });
+        }, {
+          rootMargin: '200px',
+          threshold: 0
+        });
+        observer.observe(sentinel);
+      }
+
+      // Result count
       function updateResultCount() {
         const countEl = document.getElementById('result-count');
         const searchInput = document.getElementById('search-input');
-        if (searchInput.value.trim()) {
+        if (searchInput.value.trim() || selectedTags.length > 0) {
           countEl.textContent = `Found ${filteredSummaries.length} results`;
         } else {
           countEl.textContent = `${allSummaries.length} Cochrane reviews`;
         }
       }
 
+      // Filter and sort
       function applyFilters() {
         const query = document.getElementById('search-input').value.toLowerCase().trim();
-
-        // Start with all summaries
         let results = allSummaries;
 
-        // Apply text search
         if (query) {
           results = results.filter(s =>
             s.question.toLowerCase().includes(query) ||
@@ -208,14 +250,12 @@
           );
         }
 
-        // Apply tag filters (AND logic)
         if (selectedTags.length > 0) {
           results = results.filter(s =>
             selectedTags.every(tag => (s.tags || []).includes(tag))
           );
         }
 
-        // Apply sort
         if (currentSort === 'interest') {
           results = [...results].sort((a, b) => (b.interest || 0) - (a.interest || 0));
         } else if (currentSort === 'latest') {
@@ -228,36 +268,39 @@
         }
 
         filteredSummaries = results;
-        currentPage = 1;
-        renderPage();
-      }
-
-      function search(query) {
-        applyFilters();
+        renderInitialItems();
       }
 
       function toggleTagFilter(tag) {
         if (selectedTags.includes(tag)) {
-          // Unselect if already selected
           selectedTags = [];
         } else {
-          // Select this tag (replacing any previous selection)
           selectedTags = [tag];
         }
         renderTagButtons();
+        updateFilterCount();
         applyFilters();
       }
 
+      function updateFilterCount() {
+        const countBadge = document.getElementById('active-filter-count');
+        if (selectedTags.length > 0) {
+          countBadge.textContent = selectedTags.length;
+          countBadge.classList.add('visible');
+        } else {
+          countBadge.classList.remove('visible');
+        }
+      }
+
+      // Tag buttons (desktop)
       function renderTagButtons() {
         const container = document.getElementById('tag-buttons');
         const usedTags = new Set();
 
-        // Collect all tags used in summaries
         allSummaries.forEach(s => {
           (s.tags || []).forEach(tag => usedTags.add(tag));
         });
 
-        // Sort tags alphabetically by friendly name
         const sortedTags = Array.from(usedTags).sort((a, b) => {
           const nameA = (tagMetadata[a] || { name: a }).name.toLowerCase();
           const nameB = (tagMetadata[b] || { name: b }).name.toLowerCase();
@@ -276,19 +319,152 @@
         container.innerHTML = html;
       }
 
-      // Debounce search
+      // Filter sheet (mobile)
+      function openFilterSheet() {
+        const sheet = document.getElementById('filter-sheet');
+        const overlay = document.getElementById('filter-sheet-overlay');
+
+        renderFilterSheetTags();
+
+        sheet.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeFilterSheet() {
+        const sheet = document.getElementById('filter-sheet');
+        const overlay = document.getElementById('filter-sheet-overlay');
+
+        sheet.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function renderFilterSheetTags() {
+        const container = document.getElementById('filter-sheet-tags');
+        const usedTags = new Set();
+
+        allSummaries.forEach(s => {
+          (s.tags || []).forEach(tag => usedTags.add(tag));
+        });
+
+        const sortedTags = Array.from(usedTags).sort((a, b) => {
+          const nameA = (tagMetadata[a] || { name: a }).name.toLowerCase();
+          const nameB = (tagMetadata[b] || { name: b }).name.toLowerCase();
+          return nameA.localeCompare(nameB);
+        });
+
+        let html = '';
+        sortedTags.forEach(tag => {
+          const meta = tagMetadata[tag] || { name: tag };
+          const isSelected = selectedTags.includes(tag);
+          const btnClass = isSelected ? 'tag-filter-btn-selected' : 'tag-filter-btn';
+          html += `<span class="badge ${btnClass}" style="cursor: pointer;" data-tag="${tag}">${escapeHtml(meta.name)}</span>`;
+        });
+
+        container.innerHTML = html;
+
+        // Add click handlers
+        container.querySelectorAll('.badge').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const tag = btn.dataset.tag;
+            if (selectedTags.includes(tag)) {
+              selectedTags = [];
+            } else {
+              selectedTags = [tag];
+            }
+            renderFilterSheetTags();
+            updateFilterCount();
+          });
+        });
+      }
+
+      function initFilterSheet() {
+        const toggleBtn = document.getElementById('filter-toggle-btn');
+        const overlay = document.getElementById('filter-sheet-overlay');
+        const closeBtn = document.getElementById('filter-sheet-close');
+        const clearBtn = document.getElementById('filter-sheet-clear');
+        const applyBtn = document.getElementById('filter-sheet-apply');
+        const sheet = document.getElementById('filter-sheet');
+        const handle = sheet.querySelector('.filter-sheet-drag-handle');
+
+        toggleBtn?.addEventListener('click', openFilterSheet);
+        overlay?.addEventListener('click', closeFilterSheet);
+        closeBtn?.addEventListener('click', closeFilterSheet);
+
+        clearBtn?.addEventListener('click', () => {
+          selectedTags = [];
+          renderFilterSheetTags();
+          updateFilterCount();
+        });
+
+        applyBtn?.addEventListener('click', () => {
+          renderTagButtons();
+          applyFilters();
+          closeFilterSheet();
+        });
+
+        // Swipe to dismiss
+        let touchStartY = 0;
+        let touchCurrentY = 0;
+
+        handle?.addEventListener('touchstart', (e) => {
+          touchStartY = e.touches[0].clientY;
+          sheet.style.transition = 'none';
+        }, { passive: true });
+
+        handle?.addEventListener('touchmove', (e) => {
+          touchCurrentY = e.touches[0].clientY;
+          const diff = touchCurrentY - touchStartY;
+          if (diff > 0) {
+            sheet.style.transform = `translateY(${diff}px)`;
+          }
+        }, { passive: true });
+
+        handle?.addEventListener('touchend', () => {
+          sheet.style.transition = '';
+          const diff = touchCurrentY - touchStartY;
+          if (diff > 100) {
+            closeFilterSheet();
+          }
+          sheet.style.transform = '';
+          touchStartY = 0;
+          touchCurrentY = 0;
+        });
+      }
+
+      // Scroll to top
+      function initScrollToTop() {
+        const button = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 500) {
+            button.classList.add('visible');
+          } else {
+            button.classList.remove('visible');
+          }
+        }, { passive: true });
+
+        button?.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Event listeners
       let searchTimeout;
       document.getElementById('search-input').addEventListener('input', function(e) {
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => applyFilters(), 200);
       });
 
-      // Sort dropdown
       document.getElementById('sort-select').addEventListener('change', function(e) {
         currentSort = e.target.value;
         applyFilters();
       });
 
-      // Initial render
+      // Initialize
       renderTagButtons();
-      renderPage();
+      initInfiniteScroll();
+      initFilterSheet();
+      initScrollToTop();
+      renderInitialItems();
