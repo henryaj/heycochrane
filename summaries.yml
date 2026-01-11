@@ -11348,3 +11348,69 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Does cladribine help with multiple sclerosis symptoms?"
+  answer: "Yes, but limited."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013524.pub2
+  notes: |
+    Cladribine likely reduces MS relapses and may reduce new brain lesions after nearly two years of treatment, but it may not slow disability progression. The evidence is very uncertain and more research is needed.
+  interest: 6
+  tags: ["multiple-sclerosis", "brain-nerves", "medication"]
+
+- question: "Do iron supplements increase the risk of malaria in children?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006589.pub5
+  notes: |
+    Iron supplements don't increase malaria risk when proper malaria prevention and treatment services are available. In areas without good malaria services, there may be a small increased risk, but it's still considered small overall.
+  interest: 8
+  tags: ["malaria", "infection", "supplements", "children", "myth-buster"]
+
+- question: "Does brain oxygen monitoring help very premature babies survive and avoid brain problems?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011506.pub3
+  notes: |
+    Non-invasive brain oxygen monitoring (NIRS) likely doesn't reduce death rates or short-term brain problems in very premature babies compared to regular care.
+  interest: 6
+  tags: ["brain-nerves", "procedure", "children"]
+
+- question: "Are custom-made cutting guides better for knee replacement surgery?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012589.pub2
+  notes: |
+    Patient-specific cutting guides (made from your knee scan) don't produce better alignment or outcomes compared to standard surgical techniques. Computer-assisted navigation may actually be more precise than custom guides.
+  interest: 6
+  tags: ["bones-joints", "surgery", "procedure"]
+
+- question: "Can liver elastography scans accurately detect dangerous portal hypertension?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015415.pub2
+  notes: |
+    Elastography scans may be able to detect clinically significant portal hypertension using a 25 kPa cut-off, but the current research quality is too poor to be reliable. More high-quality studies are needed before this non-invasive test can replace the current invasive standard test.
+  interest: 3
+  tags: ["liver", "procedure", "screening"]
+
+- question: "Should I get knee replacement surgery for my osteoarthritis?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015378.pub2
+  notes: |
+    For people with mild to severe knee osteoarthritis, knee replacement surgery may provide a small reduction in pain that offers real benefit, but improvements in physical function may be too small to matter. The surgery may also reduce the need for follow-up knee procedures.
+  interest: 8
+  tags: ["osteoarthritis", "bones-joints", "surgery", "elderly"]
+
+- question: "Is atherectomy better than other treatments for blocked leg arteries?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006680.pub4
+  notes: |
+    There appears to be little to no difference between atherectomy (a procedure that cuts away fatty plaques) and conventional treatments like balloon angioplasty or stenting. However, the evidence is poor quality, so these findings are very uncertain.
+  interest: 4
+  tags: ["heart-disease", "procedure", "elderly"]
+
+- question: "Does spinal manipulation help with chronic lower back pain?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008112.pub3
+  notes: |
+    Spinal manipulative therapy provides small to moderate improvements in pain and function compared to fake treatment or no treatment. Side effects like muscle soreness are common but serious complications are rare.
+  interest: 7
+  tags: ["back-pain", "chronic-pain", "chiropractic", "alternative-medicine"]
