@@ -11348,3 +11348,37 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Do BCAAs (branched-chain amino acids) help treat hepatic encephalopathy in people with liver disease?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001939.pub5
+  notes: |
+    BCAAs may reduce the number of people who develop hepatic encephalopathy, but they don't seem to affect survival rates. The evidence is still uncertain and more high-quality studies are needed.
+  interest: 5
+  tags: ["liver", "supplements", "brain-nerves"]
+
+- question: "Does cladribine help treat multiple sclerosis?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013524.pub2
+  notes: |
+    Cladribine likely reduces MS relapses and may reduce new brain lesions after almost two years of treatment, but doesn't seem to slow disability progression. The evidence quality is uncertain and more research is needed to better understand its benefits and risks.
+  interest: 5
+  tags: ["multiple-sclerosis", "brain-nerves", "medication"]
+
+- question: "Do iron supplements increase the risk of malaria in children?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006589.pub5
+  notes: |
+    Iron supplements don't increase malaria risk when proper malaria prevention and treatment services are available. In areas without these services, there may be a small increased risk, but it's minimal.
+  interest: 8
+  tags: ["malaria", "infection", "supplements", "children", "myth-buster"]
+
+- question: "Are custom-made surgical guides better for knee replacement surgery?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012589.pub2
+  notes: |
+    Patient-specific cutting guides (custom-made from your knee scan) don't produce better-aligned knee replacements compared to standard surgical techniques. They also don't improve outcomes like pain, function, or how long the replacement lasts.
+  interest: 6
+  tags: ["bones-joints", "surgery", "procedure"]
