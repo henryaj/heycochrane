@@ -11348,3 +11348,37 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Is it better to transfer embryos on day 5-6 versus day 2-3 during IVF?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD002118.pub7
+  notes: |
+    Transferring embryos at the blastocyst stage (day 5-6) rather than the cleavage stage (day 2-3) slightly improves your chances of having a live baby, especially for women with good prognosis factors. However, it may increase the risk of premature birth between 32-36 weeks.
+  interest: 6
+  tags: ["procedure"]
+
+- question: "Do swallowing rehabilitation treatments help people with Parkinson's disease who have trouble swallowing?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015816.pub2
+  notes: |
+    We don't know if rehabilitation treatments help people with Parkinson's swallow more safely because the evidence is limited and of poor quality. Larger, high-quality studies are needed to determine which treatments, if any, actually work.
+  interest: 5
+  tags: ["parkinsons", "brain-nerves", "therapy"]
+
+- question: "Does occupational therapy help people with multiple sclerosis?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015371.pub2
+  notes: |
+    Occupational therapy may provide small improvements in daily functioning and mental well-being for people with MS, though effects on physical health-related quality of life are minimal. Benefits appear to be modest and it's unclear how long they last.
+  interest: 6
+  tags: ["multiple-sclerosis", "brain-nerves", "therapy"]
+
+- question: "Do BCAAs (branched-chain amino acids) help with hepatic encephalopathy?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001939.pub5
+  notes: |
+    BCAAs may help prevent hepatic encephalopathy from developing, but they don't seem to reduce deaths from the condition. The evidence is limited and more research is needed to know how well they work.
+  interest: 5
+  tags: ["liver", "supplements", "brain-nerves"]
