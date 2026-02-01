@@ -11348,3 +11348,29 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Do behavioral approaches to oral hygiene advice help with gum disease better than regular advice?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012049.pub2
+  notes: |
+    The evidence is very uncertain for both gingivitis and periodontitis. Researchers couldn't determine whether behavioral approaches to teaching oral hygiene work better than standard dental advice for managing gum disease.
+  interest: 5
+  tags: ["digestive", "therapy", "general-health"]
+
+- question: "Should IV lines be changed routinely or only when there's a problem?"
+  answer: "Either approach is fine."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007798.pub6
+  notes: |
+    There's no clear difference in serious complications like bloodstream infections or death between changing IV lines routinely versus only when medically necessary. Changing them only when needed costs less money.
+  interest: 6
+  tags: ["infection", "procedure", "myth-buster"]
+
+- question: "Which method of labor induction works best?"
+  answer: "No clear winner."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015234.pub2
+  notes: |
+    Studies couldn't identify which induction method was clearly better than others for achieving vaginal delivery within 24 hours or reducing cesarean rates. However, some methods like nitric oxide donors and balloon catheters appear safer in terms of reducing excessive contractions that could stress the baby.
+  interest: 6
+  tags: ["childbirth", "pregnancy", "procedure"]
