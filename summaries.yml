@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Should women with pelvic organ prolapse get incontinence surgery at the same time?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013108.pub2
+  notes: |
+    Women who already have stress incontinence along with prolapse will likely benefit from having both surgeries together. However, women who don't have incontinence may not need the additional procedure.
+  interest: 6
+  tags: ["bones-joints", "procedure", "surgery"]
+
+- question: "Does ginkgo help with memory problems or dementia?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013661.pub2
+  notes: |
+    Ginkgo doesn't help with mild memory problems or multiple sclerosis-related thinking issues. For people with dementia, it might provide some benefit, but the research results varied so much that we can't be sure.
+  interest: 8
+  tags: ["dementia", "brain-nerves", "herbs", "myth-buster"]
+
+- question: "What's the best way to improve how rehabilitation services work for patients?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016324
+  notes: |
+    There's very little reliable evidence on how to improve rehabilitation services, and most research comes from wealthy countries. Some extra support like counseling may help people participate more in cardiac rehab, but the benefits appear small and we need much more research to know what works.
+  interest: 4
+  tags: ["heart-disease", "therapy", "physiotherapy"]
+
+- question: "Does psychoeducation help parents of people with severe mental illness?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014532.pub2
+  notes: |
+    Face-to-face teaching by health professionals may improve parents' mental and emotional well-being in the short and medium term, and may help with anxiety in the short term. However, the evidence is very uncertain and more research is needed.
+  interest: 6
+  tags: ["mental-health", "therapy", "general-health"]
+
+- question: "Do antibiotics help prevent brain problems in people with cirrhosis?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012734.pub2
+  notes: |
+    Antibiotics that were previously thought to help manage hepatic encephalopathy (brain problems caused by liver scarring) don't appear to work and may cause more side effects than other treatments.
+  interest: 6
+  tags: ["liver", "brain-nerves", "antibiotics", "myth-buster"]
