@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Can a nurse provide the same quality of care as a doctor?"
+  answer: "Yes, mostly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013616.pub2
+  notes: |
+    There appears to be little to no difference between care delivered by nurses versus doctors. In some areas like diabetes management and patient assessments, nurse-delivered care may even be slightly better, though the evidence is still uncertain.
+  interest: 8
+  tags: ["general-health", "myth-buster"]
+
+- question: "Does training healthcare workers in quit-smoking techniques help their patients quit smoking?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000214.pub3
+  notes: |
+    Training healthcare professionals in smoking cessation methods does help more of their patients successfully quit smoking. More comprehensive training programs that include multiple components like counselling techniques, follow-up support, and ongoing resources for the healthcare workers appear to be even more effective.
+  interest: 6
+  tags: ["smoking", "prevention", "general-health"]
+
+- question: "Does adding immunotherapy to chemotherapy help treat early triple-negative breast cancer?"
+  answer: "Yes, but only before surgery."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015072.pub2
+  notes: |
+    Adding PD-1 or PD-L1 inhibitors to chemotherapy before surgery improves cancer clearance and survival outcomes for early-stage triple-negative breast cancer. However, it increases the risk of serious side effects and doesn't help when given after surgery.
+  interest: 8
+  tags: ["cancer", "medication", "procedure"]
+
+- question: "Do antifibrinolytic drugs help prevent bleeding in people with blood disorders?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009733.pub4
+  notes: |
+    Tranexamic acid (TXA) probably makes little or no difference in preventing moderate to severe bleeding in people with low platelet counts due to blood disorders. There isn't enough data to know if epsilon aminocaproic acid (EACA) works.
+  interest: 4
+  tags: ["blood", "medication", "prevention"]
+
+- question: "Should you have incontinence surgery at the same time as pelvic organ prolapse surgery?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013108.pub2
+  notes: |
+    If you already have stress incontinence along with pelvic prolapse, having both surgeries together will likely improve your incontinence afterward. However, if you don't have incontinence issues, you probably don't need the additional procedure.
+  interest: 6
+  tags: ["surgery", "procedure"]
