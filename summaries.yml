@@ -11348,3 +11348,29 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Can I take folic acid supplements if I'm taking antimalarial drugs?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014217.pub2
+  notes: |
+    Higher doses of folic acid can interfere with antimalarial medications, making them less effective at clearing malaria parasites. However, there isn't enough research on the low 400 μg dose recommended during pregnancy to know if it's safe with antimalarials.
+  interest: 7
+  tags: ["malaria", "infection", "supplements", "vitamins", "pregnancy"]
+
+- question: "Do treatments help with fatigue after a traumatic brain injury?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006448.pub2
+  notes: |
+    Medications like melatonin, growth hormones, and brain stimulants likely reduce fatigue after brain injuries. Non-medication treatments like talking therapies and counselling may also help with the overwhelming tiredness that doesn't improve with rest.
+  interest: 8
+  tags: ["brain-nerves", "chronic-pain", "medication", "therapy"]
+
+- question: "Is chemotherapy through an artery better than through a vein for treating retinoblastoma?"
+  answer: "Yes, probably."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013695.pub2
+  notes: |
+    One well-designed study found that artery chemotherapy is probably better at saving the eye from removal compared to vein chemotherapy, with no difference in survival rates. However, more large studies are needed to confirm these findings.
+  interest: 4
+  tags: ["cancer", "eye", "medication", "procedure", "children"]
