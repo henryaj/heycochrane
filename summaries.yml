@@ -11348,3 +11348,29 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Is laparoscopic (keyhole) surgery better than open surgery for repairing hernias in children?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015470.pub2
+  notes: |
+    Both surgeries are equally effective at preventing hernias from coming back, but keyhole surgery causes fewer mild complications like wound healing problems and swelling compared to open surgery.
+  interest: 6
+  tags: ["surgery", "procedure", "children"]
+
+- question: "Should I take daily aspirin to prevent bowel cancer?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015266.pub2
+  notes: |
+    While aspirin might reduce bowel cancer risk after 15+ years, the evidence is uncertain and aspirin clearly increases your risk of serious bleeding in the brain. The potential cancer benefits don't outweigh the bleeding risks.
+  interest: 8
+  tags: ["cancer", "digestive", "medication", "prevention", "myth-buster", "general-health"]
+
+- question: "Does taking folic acid supplements interfere with malaria medications?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014217.pub2
+  notes: |
+    People who took folic acid supplements along with antifolate antimalarial drugs were less likely to clear malaria parasites from their blood and had higher treatment failure rates. The supplements appear to reduce how well these malaria medications work.
+  interest: 8
+  tags: ["malaria", "infection", "supplements", "myth-buster"]
