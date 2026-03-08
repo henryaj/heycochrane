@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Is high-dose phototherapy better than low-dose for newborn jaundice?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003308.pub3
+  notes: |
+    High-dose phototherapy may slightly reduce bilirubin levels faster than low-dose treatment, but it's unclear if this translates to better health outcomes like preventing brain injury or death. More research is needed to determine the optimal light therapy dose.
+  interest: 6
+  tags: ["children", "procedure"]
+
+- question: "Does sugar water help reduce pain in newborn babies during needle procedures?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015221.pub2
+  notes: |
+    Giving newborn babies a small amount of sugar water (sucrose) about two minutes before needle procedures like blood draws probably reduces their pain during and shortly after the procedure. It appears to work better than pacifiers and seems to be safe with no reported harmful side effects.
+  interest: 8
+  tags: ["chronic-pain", "children", "prevention"]
+
+- question: "Does magnesium sulphate help treat bronchiolitis in babies and toddlers?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012965.pub3
+  notes: |
+    It's unclear whether magnesium sulphate helps children under two with this common lung infection that causes coughing, wheezing, and breathing difficulties. More research is needed to determine if it's beneficial.
+  interest: 5
+  tags: ["respiratory", "infection", "medication", "children"]
+
+- question: "Is keyhole surgery better than open surgery for children's hernias?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015470.pub2
+  notes: |
+    Both surgical approaches have similar rates of hernias coming back, but keyhole surgery causes fewer mild complications like poor wound healing or swelling compared to open surgery.
+  interest: 6
+  tags: ["hernia", "surgery", "procedure", "children"]
+
+- question: "Should I take daily aspirin to prevent bowel cancer?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015266.pub2
+  notes: |
+    The evidence that aspirin prevents bowel cancer is mixed and uncertain, but there's clear evidence it increases your risk of dangerous bleeding in the brain. The potential benefits don't outweigh the known risks.
+  interest: 8
+  tags: ["cancer", "prevention", "medication", "myth-buster", "general-health"]
