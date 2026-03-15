@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Does vagus nerve stimulation help improve arm and hand movement after a stroke?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015859.pub2
+  notes: |
+    It's unclear whether vagus nerve stimulation combined with rehabilitation works better than rehabilitation alone for improving arm and hand movement after stroke. The treatment appears safe with few side effects, but more research is needed to know if it's truly effective.
+  interest: 6
+  tags: ["stroke", "brain-nerves", "procedure", "therapy"]
+
+- question: "Is high-intensity interval training (HIIT) better than regular exercise for heart health?"
+  answer: "No, but it works just as well."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013617.pub2
+  notes: |
+    HIIT may improve fitness slightly more than steady moderate exercise, but both types of exercise are equally effective for improving heart health markers like blood pressure and reducing diabetes risk.
+  interest: 7
+  tags: ["heart-disease", "high-blood-pressure", "diabetes", "exercise", "general-health", "myth-buster"]
+
+- question: "Does high-dose phototherapy work better than low-dose for newborn jaundice?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003308.pub3
+  notes: |
+    High-dose light therapy may slightly reduce bilirubin levels faster than low-dose therapy, but it's unclear if this translates to better health outcomes for babies. More research is needed to determine the optimal light dose.
+  interest: 5
+  tags: ["children", "procedure"]
+
+- question: "Does sugar water help reduce pain in newborn babies during needle procedures?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015221.pub2
+  notes: |
+    Giving newborn babies a small amount of sucrose (sugar water) on their tongue before needle procedures probably reduces their pain during and shortly after the procedure. It appears to work better than pacifiers and seems to be safe with no reported harmful side effects.
+  interest: 8
+  tags: ["chronic-pain", "children", "prevention"]
+
+- question: "Does magnesium sulphate help treat bronchiolitis in babies and toddlers?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012965.pub3
+  notes: |
+    It's unclear whether magnesium sulphate helps children under two with this common lung infection that causes coughing, wheezing, and breathing difficulties. More research is needed to determine if it's beneficial or safe.
+  interest: 6
+  tags: ["respiratory", "infection", "medication", "children"]
