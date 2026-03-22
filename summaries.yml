@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Should I start treatment early if I have high-risk smoldering multiple myeloma?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015494.pub2
+  notes: |
+    Early treatment with daratumumab may help you live longer and delay the disease from becoming active, but it can cause side effects. Another drug, lenalidomide, doesn't seem to help much and the evidence is very uncertain for both treatments.
+  interest: 6
+  tags: ["cancer", "medication"]
+
+- question: "Does vagus nerve stimulation help stroke survivors recover arm and hand movement?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015859.pub2
+  notes: |
+    It's unclear whether vagus nerve stimulation paired with rehabilitation works better than rehabilitation alone for improving arm and hand movement after stroke. The treatment appears safe with few side effects, but more research is needed to know if it's truly effective.
+  interest: 6
+  tags: ["stroke", "brain-nerves", "procedure", "alternative-medicine"]
+
+- question: "Is high-intensity interval training (HIIT) better than regular exercise for heart health?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013617.pub2
+  notes: |
+    HIIT may improve fitness slightly more than steady, moderate exercise, but there's no clear difference for blood pressure, waist size, or blood fats. Both types of exercise seem equally effective for heart health and reducing diabetes risk.
+  interest: 6
+  tags: ["heart-disease", "exercise", "general-health"]
+
+- question: "Is high-dose phototherapy better than low-dose for treating jaundice in newborns?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003308.pub3
+  notes: |
+    High-dose phototherapy may reduce bilirubin levels slightly faster than low-dose, but it's unclear if this translates to better health outcomes like preventing brain injury or death. More research is needed to determine the optimal light therapy dose for newborn jaundice.
+  interest: 5
+  tags: ["children", "procedure"]
+
+- question: "Does sugar water help reduce pain in newborn babies during needle procedures?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015221.pub2
+  notes: |
+    Sucrose (sugar water) given to newborn babies before needle procedures probably reduces their pain during and shortly after the procedure. It appears to work better than pacifiers and seems safe with no reported harmful side effects.
+  interest: 8
+  tags: ["chronic-pain", "children", "procedure"]
