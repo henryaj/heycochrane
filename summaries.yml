@@ -11348,3 +11348,45 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Do specialized nutritional drinks and foods help hospitalized older adults?"
+  answer: "Yes, partly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015468.pub2
+  notes: |
+    Specialized nutritional support may reduce the risk of death and serious health problems within a month of hospital admission compared to standard care. However, there's little evidence it improves daily functioning, quality of life, or hospital stay length.
+  interest: 6
+  tags: ["elderly", "supplements", "general-health"]
+
+- question: "Should you apply antiseptics to a newborn's umbilical cord stump?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008635.pub3
+  notes: |
+    Chlorhexidine antiseptic likely reduces infection risk and may reduce death risk for newborns in low- and middle-income countries. However, in high-income countries with better hygiene and healthcare access, there's no clear benefit compared to keeping the cord clean and dry.
+  interest: 6
+  tags: ["infection", "prevention", "children", "childbirth"]
+
+- question: "Do non-clotting factor therapies help prevent bleeding in people with hemophilia?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014544.pub3
+  notes: |
+    New non-clotting factor treatments reduced bleeding rates and increased the percentage of people who had zero bleeds compared to no prevention treatment. People also reported improved well-being, though there were more overall side effects.
+  interest: 6
+  tags: ["blood", "medication", "prevention"]
+
+- question: "Should people with high-risk smoldering multiple myeloma start treatment early or wait until it becomes active?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015494.pub2
+  notes: |
+    Early treatment with daratumumab may help you live longer and delay the disease from becoming active, but it can have serious side effects. Another medicine, lenalidomide, might not help much at all. The evidence is still very uncertain for both treatments.
+  interest: 6
+  tags: ["cancer", "medication"]
+
+- question: "Does vagus nerve stimulation help stroke survivors recover arm and hand movement?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015859.pub2
+  notes: |
+    It's unclear whether vagus nerve stimulation combined with rehabilitation works better than rehabilitation alone for improving arm and hand function after stroke. The treatment appears safe with few side effects, but more research is needed to know if it's truly effective.
+  interest: 6
+  tags: ["stroke", "brain-nerves", "procedure", "alternative-medicine"]
