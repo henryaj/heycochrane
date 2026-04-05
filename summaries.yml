@@ -11348,3 +11348,61 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Does melatonin help treat brain problems in newborns?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013754.pub2
+  notes: |
+    The evidence for using melatonin to treat neonatal encephalopathy (abnormal brain function in newborns) is very uncertain. More research is needed to determine if melatonin should be used for this condition.
+  interest: 6
+  tags: ["brain-nerves", "supplements", "children"]
+
+- question: "Does newborn resuscitation training for healthcare providers save babies' lives?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009106.pub3
+  notes: |
+    Training programs for doctors, nurses, and midwives on how to resuscitate newborns may reduce deaths in the first 28 days after birth, especially in the first 24 hours and first week. However, it's still unclear whether this training prevents brain injury or long-term developmental problems in babies who needed resuscitation.
+  interest: 8
+  tags: ["children", "procedure", "prevention"]
+
+- question: "Is lenacapavir better than daily oral PrEP for preventing HIV?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016347
+  notes: |
+    Lenacapavir, which only requires an injection every six months, prevents significantly more HIV infections than daily oral PrEP medications. It also causes slightly fewer serious side effects, though it may cause more mild injection site reactions.
+  interest: 8
+  tags: ["hiv", "infection", "medication", "prevention"]
+
+- question: "Should I take daily aspirin to prevent bowel cancer?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015266.pub3
+  notes: |
+    The evidence that aspirin prevents bowel cancer is weak and uncertain, but there's clear evidence it increases your risk of serious bleeding in the brain. The potential harms outweigh the uncertain benefits.
+  interest: 8
+  tags: ["cancer", "digestive", "medication", "prevention", "myth-buster"]
+
+- question: "Do specialized nutritional drinks and foods help malnourished older adults in hospitals?"
+  answer: "Yes, but limited benefits."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015468.pub2
+  notes: |
+    Specialized nutritional support may reduce the risk of death and serious health problems within a month of hospital admission compared to standard care. However, evidence shows little to no clear benefit for daily functioning, quality of life, hospital stay length, or weight gain.
+  interest: 6
+  tags: ["supplements", "elderly", "prevention"]
+
+- question: "Should you apply antiseptics to a newborn's umbilical cord stump?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008635.pub3
+  notes: |
+    In low- and middle-income countries, applying chlorhexidine to the cord stump likely reduces infection risk and may prevent death. However, in high-income countries, there's no clear benefit compared to just keeping the cord clean and dry.
+  interest: 8
+  tags: ["infection", "prevention", "children", "childbirth"]
+
+- question: "Do new non-clotting factor therapies help prevent bleeding in people with hemophilia?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014544.pub3
+  notes: |
+    These newer treatments reduced annual bleeding rates for all types of bleeds and increased the percentage of people who had zero bleeds. People also reported improved well-being, though there were more overall unwanted side effects.
+  interest: 6
+  tags: ["blood", "medication"]
