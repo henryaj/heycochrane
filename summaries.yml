@@ -11348,3 +11348,61 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Is using glue or self-sticking patches better than stitches for hernia repair?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016122.pub2
+  notes: |
+    For groin hernia surgery, using glue or self-sticking patches instead of stitches, tacks, or staples may slightly reduce bleeding under the skin, but makes little difference for long-term pain or the hernia returning. The evidence quality is low, so results should be interpreted carefully.
+  interest: 6
+  tags: ["bones-joints", "surgery", "procedure"]
+
+- question: "Should the spleen be removed during stomach cancer surgery?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014601.pub2
+  notes: |
+    Removing the spleen along with the stomach during cancer surgery doesn't improve survival or reduce cancer recurrence, but it does increase the risk of complications after the operation. The evidence is limited and more research is needed.
+  interest: 6
+  tags: ["cancer", "surgery", "procedure"]
+
+- question: "Do antibiotics help with lower back pain?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014221.pub2
+  notes: |
+    Antibiotics may provide slight pain relief and some improvement in disability for people with back pain linked to damaged vertebral endplates and disc rupture. However, more high-quality studies are needed to confirm these benefits and understand potential risks.
+  interest: 8
+  tags: ["back-pain", "chronic-pain", "antibiotics", "myth-buster"]
+
+- question: "Does melatonin help treat brain problems in newborns?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013754.pub2
+  notes: |
+    The evidence for using melatonin to treat neonatal encephalopathy (abnormal brain function in newborns) is very uncertain. More research is needed before we know if melatonin should be used for this condition.
+  interest: 6
+  tags: ["brain-nerves", "supplements", "children"]
+
+- question: "Do newborn resuscitation training programmes for healthcare providers save babies' lives?"
+  answer: "Yes, probably."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009106.pub3
+  notes: |
+    Training healthcare providers in newborn resuscitation may reduce deaths in the first 28 days after birth, with most benefit seen in the first 24 hours and first week. However, more research is still needed to know if this training prevents brain injury or long-term developmental problems.
+  interest: 8
+  tags: ["childbirth", "children", "procedure", "prevention"]
+
+- question: "Should I take daily aspirin to prevent bowel cancer?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015266.pub3
+  notes: |
+    The evidence that aspirin prevents bowel cancer is weak and uncertain, but there's clear evidence it increases your risk of dangerous bleeding in the brain and skull. The potential harms outweigh the uncertain benefits.
+  interest: 8
+  tags: ["cancer", "prevention", "medication", "myth-buster", "general-health"]
+
+- question: "Does lenacapavir work better than daily oral PrEP to prevent HIV?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016347
+  notes: |
+    Lenacapavir, which only requires an injection every six months, prevents many more new HIV infections compared to daily oral PrEP pills. It also causes slightly fewer serious side effects, though it may cause more mild injection site reactions.
+  interest: 8
+  tags: ["hiv", "infection", "medication", "prevention"]
