@@ -11348,3 +11348,61 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Do anti-amyloid drugs help slow down Alzheimer's disease?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016297
+  notes: |
+    These laboratory-made antibodies can successfully remove amyloid protein buildup from the brain, but this doesn't translate to meaningful improvements in memory, thinking, or dementia symptoms. The drugs do cause more brain swelling and bleeding than placebo treatments.
+  interest: 8
+  tags: ["alzheimers", "dementia", "brain-nerves", "medication", "elderly", "myth-buster"]
+
+- question: "Should I get a balloon or stent procedure for narrowed neck arteries after a stroke?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013692.pub3
+  notes: |
+    Adding balloon or stent procedures to standard stroke treatment doesn't appear to reduce your risk of having another stroke compared to standard treatment alone. However, the evidence is limited because the studies were small and ended early, so more research is needed.
+  interest: 8
+  tags: ["stroke", "brain-nerves", "procedure", "myth-buster"]
+
+- question: "Does insulin-like growth factor-1 treatment prevent eye problems in premature babies?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013216.pub2
+  notes: |
+    There isn't enough evidence yet to know if this protein treatment helps prevent retinopathy of prematurity, a condition where blood vessels in premature babies' eyes don't grow normally and can cause vision problems or blindness.
+  interest: 4
+  tags: ["eye", "children", "medication"]
+
+- question: "Is it better to use glue or self-sticking patches instead of stitches when fixing a groin hernia?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016122.pub2
+  notes: |
+    Using glue or self-sticking patches to attach the repair patch may reduce bleeding under the skin compared to stitches, tacks, or staples, but makes little difference for long-term pain or hernia recurrence. However, the evidence quality is low, so these results should be interpreted carefully.
+  interest: 6
+  tags: ["bones-joints", "surgery", "procedure"]
+
+- question: "Should the spleen be removed during stomach cancer surgery?"
+  answer: "No, but..."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014601.pub2
+  notes: |
+    Removing the spleen during stomach surgery doesn't improve survival or reduce cancer recurrence, and it probably increases the risk of complications after the operation. However, the evidence is limited and more research is needed.
+  interest: 6
+  tags: ["cancer", "surgery", "procedure"]
+
+- question: "Do antibiotics help with lower back pain?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014221.pub2
+  notes: |
+    Antibiotics may provide slight pain relief and some improvement in disability for people with specific types of back problems linked to damaged vertebral endplates and disc rupture. However, more research is needed to confirm these benefits and understand potential side effects.
+  interest: 8
+  tags: ["back-pain", "chronic-pain", "antibiotics", "myth-buster"]
+
+- question: "Does melatonin help treat brain problems in newborns?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013754.pub2
+  notes: |
+    The evidence for using melatonin to treat neonatal encephalopathy (abnormal brain function in newborns) is very uncertain. More research is needed to determine if melatonin should be used for this condition.
+  interest: 6
+  tags: ["brain-nerves", "supplements", "children"]
