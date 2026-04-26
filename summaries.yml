@@ -11348,3 +11348,61 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Is vaginal mesh surgery better than using your own tissue for bladder prolapse?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004014.pub7
+  notes: |
+    Permanent vaginal mesh is probably more effective at preventing prolapse symptoms and repeat surgeries compared to using your own tissue. However, it may increase the risk of new pain during sex compared to abdominal mesh surgery.
+  interest: 6
+  tags: ["procedure", "surgery"]
+
+- question: "Should surgeons remove more lymph nodes when taking out your bladder for cancer?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013336.pub2
+  notes: |
+    Removing more lymph nodes probably reduces deaths specifically from bladder cancer within five years, but it also increases the risk of serious complications after surgery. It doesn't seem to affect overall death rates or cancer recurrence.
+  interest: 6
+  tags: ["cancer", "surgery", "procedure"]
+
+- question: "What's the best way to organize rehabilitation services?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016348
+  notes: |
+    The available evidence is limited and we don't yet know the best way to organize rehabilitation services. Using different types of providers may make little difference, and telerehabilitation appears similar to in-person care, but more research is needed.
+  interest: 4
+  tags: ["physiotherapy", "therapy"]
+
+- question: "Are buffered solutions better than saline for critically ill patients?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012247.pub3
+  notes: |
+    Using buffered solutions instead of regular saline makes little to no difference in hospital death rates for critically ill adults and children. It also probably doesn't reduce kidney damage compared to standard saline treatment.
+  interest: 4
+  tags: ["kidney", "medication", "procedure"]
+
+- question: "Do anti-amyloid antibody drugs help slow down Alzheimer's disease?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016297
+  notes: |
+    These laboratory-made antibodies can successfully remove harmful amyloid proteins from the brain, but this doesn't translate into meaningful improvements in memory, thinking, or dementia symptoms after 18 months of treatment. The drugs do cause more brain swelling and tiny bleeds as side effects.
+  interest: 8
+  tags: ["alzheimers", "dementia", "brain-nerves", "medication", "myth-buster"]
+
+- question: "Does insulin-like growth factor-1 prevent eye problems in premature babies?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013216.pub2
+  notes: |
+    Current evidence doesn't allow firm conclusions about whether this protein treatment can prevent retinopathy of prematurity, a common eye disease in very small premature babies. Studies so far haven't been large enough to detect important benefits or side effects.
+  interest: 4
+  tags: ["eye", "children", "procedure"]
+
+- question: "Does adding a balloon or stent procedure to standard treatment prevent another stroke if you have narrowed blood vessels in your neck?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013692.pub3
+  notes: |
+    Adding endovascular angioplasty (balloon or stent procedure) to standard stroke prevention treatment makes little to no difference in preventing another stroke or mini-stroke. The evidence is limited because the studies were small and had quality issues, so more research is needed.
+  interest: 6
+  tags: ["stroke", "brain-nerves", "procedure", "heart-disease"]
