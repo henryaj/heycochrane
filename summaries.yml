@@ -11348,3 +11348,53 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Do CFTR modulator medicines help people with cystic fibrosis?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016290
+  notes: |
+    Single CFTR modulator drugs showed no clear benefit over placebo for improving quality of life or lung function in people with the most common form of cystic fibrosis. The evidence is weak and future research is focusing on combination therapies instead.
+  interest: 6
+  tags: ["respiratory", "medication"]
+
+- question: "Does exposing preterm babies to smells help with feeding and recovery?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016074.pub2
+  notes: |
+    Exposing preterm babies to the smell of breast milk may slightly reduce the time it takes them to learn to feed by mouth. Other scents like vanilla, cinnamon, or a parent's smell may also provide small benefits for breathing or hospital stay length, though the evidence is limited.
+  interest: 8
+  tags: ["children", "procedure", "general-health"]
+
+- question: "Can hospital fall prevention programs reduce falls in older patients?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016065
+  notes: |
+    Tailored education for staff and patients, changes to how hospitals deliver care, and multifactorial interventions that address multiple risk factors all probably reduce falls. Programs work best when they're integrated into the hospital setting and engage patients and families.
+  interest: 6
+  tags: ["bones-joints", "prevention", "elderly"]
+
+- question: "Can imaging tests accurately detect blocked fallopian tubes?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014968.pub2
+  notes: |
+    Three imaging tests (sono-HSG, HSG, and THL) can reliably show whether fallopian tubes are blocked. However, HSG appears to incorrectly suggest blockage more often than the other two tests when tubes are actually clear.
+  interest: 6
+  tags: ["pregnancy", "procedure", "screening"]
+
+- question: "Does the time of day affect outcomes for heart surgery?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD014901.pub2
+  notes: |
+    One small study suggested that afternoon heart surgery might reduce heart muscle injury compared to morning surgery, but there wasn't enough evidence to draw clear conclusions about survival, complications, or hospital stay length. Much more research is needed.
+  interest: 6
+  tags: ["heart-disease", "surgery"]
+
+- question: "Do liver support devices help people with acute liver failure?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015059.pub2
+  notes: |
+    The evidence is too limited and uncertain to know whether liver support systems help reduce death, prevent the need for transplant, or improve other outcomes in people with acute liver failure.
+  interest: 4
+  tags: ["liver", "procedure"]
