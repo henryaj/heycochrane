@@ -11348,3 +11348,37 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Should men get screened for prostate cancer with a PSA blood test?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004720.pub4
+  notes: |
+    PSA screening likely reduces deaths from prostate cancer and may reduce overall deaths, but it also leads to diagnosing and treating some cancers that wouldn't have caused problems during a man's lifetime. The decision involves weighing potential benefits against risks of overtreatment and side effects.
+  interest: 8
+  tags: ["cancer", "screening", "general-health", "elderly"]
+
+- question: "Do weight-loss medicines work for children and teenagers with obesity?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015986
+  notes: |
+    Weight-loss medicines may reduce body weight and BMI slightly compared to placebo, and probably don't cause more side effects. However, researchers aren't sure if adding these medicines to lifestyle changes works better than lifestyle changes alone.
+  interest: 7
+  tags: ["weight-loss", "medication", "children"]
+
+- question: "Do medicines help with symptoms of Friedreich ataxia?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007791.pub5
+  notes: |
+    Taking medicine for a year probably improves hand and finger coordination but has little to no effect on balance, coordination, or speech problems. The effects on heart health and daily activities are uncertain.
+  interest: 3
+  tags: ["brain-nerves", "medication"]
+
+- question: "Do CFTR modulator medicines help people with cystic fibrosis who have the F508del gene variant?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016290
+  notes: |
+    Single CFTR modulator medicines were not clearly better than placebo for improving quality of life or lung function in people with two copies of the F508del gene variant. The evidence is weak and future research is focusing on combination therapies instead.
+  interest: 5
+  tags: ["respiratory", "medication"]
