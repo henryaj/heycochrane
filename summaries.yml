@@ -11348,3 +11348,61 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Should preterm babies receive medications to stimulate red blood cell production in their first week of life?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004863.pub7
+  notes: |
+    These medications (like erythropoietin) may reduce brain-related disabilities, decrease the need for blood transfusions, and lower the risk of serious gut problems and brain bleeding in preterm babies. However, they don't appear to reduce overall death rates.
+  interest: 6
+  tags: ["children", "medication", "procedure"]
+
+- question: "Should you deliver early if you have high blood pressure during pregnancy?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009273.pub3
+  notes: |
+    Planned early delivery reduces complications for the mother without increasing the need for cesarean section. It probably also reduces the risk of stillbirth with little difference in whether the baby needs special care after birth.
+  interest: 8
+  tags: ["high-blood-pressure", "heart-disease", "pregnancy", "procedure"]
+
+- question: "Should premature babies get platelet transfusions when their platelet counts are higher or lower?"
+  answer: "At lower levels."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015341.pub2
+  notes: |
+    Waiting until platelet counts are lower before giving transfusions reduces the number of transfusions needed without increasing the risk of death or bleeding in premature babies.
+  interest: 6
+  tags: ["blood", "procedure", "children"]
+
+- question: "Should I get immunotherapy added to chemotherapy if I have early triple-negative breast cancer?"
+  answer: "Yes, before surgery."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015072.pub3
+  notes: |
+    Adding immunotherapy to chemotherapy before surgery improves your chances of having no cancer detectable at surgery and helps prevent the cancer from returning. However, it likely increases the risk of serious side effects, and doesn't seem to help if given after surgery instead.
+  interest: 8
+  tags: ["cancer", "medication", "surgery"]
+
+- question: "Should children with neurological impairment get anti-reflux surgery along with a feeding tube?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015007.pub2
+  notes: |
+    There's very limited evidence to guide this decision. Adding anti-reflux surgery to feeding tube placement doesn't clearly reduce reflux symptoms, deaths, or major complications, though it may not increase hospitalizations for pneumonia either.
+  interest: 6
+  tags: ["brain-nerves", "digestive", "surgery", "procedure", "children"]
+
+- question: "Should you stop taking DMARDs before joint surgery if you have inflammatory arthritis?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015096.pub2
+  notes: |
+    Stopping these immune-suppressing medications before surgery may increase your risk of an arthritis flare, but doesn't seem to affect your infection risk. More research is needed to give clearer guidance.
+  interest: 6
+  tags: ["arthritis", "bones-joints", "medication", "surgery"]
+
+- question: "Do bedside blood clotting tests help reduce deaths and bleeding during surgery?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007871.pub4
+  notes: |
+    TEG and ROTEM tests that guide blood transfusion decisions may reduce deaths, blood loss, and need for additional surgery, but the evidence is very uncertain. The findings mainly applied to heart surgery patients.
+  interest: 6
+  tags: ["heart-disease", "surgery", "procedure"]
