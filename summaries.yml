@@ -11348,3 +11348,69 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Does Botox help with chronic neck pain?"
+  answer: "Yes, mildly."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008626.pub4
+  notes: |
+    Botox injections may provide a slight short-term improvement in neck pain (about 6%) and some people report treatment success, but there's no long-term benefit. There's also a 16% higher chance of mild side effects like soreness or headache.
+  interest: 6
+  tags: ["chronic-pain", "neck-pain", "procedure", "general-health"]
+
+- question: "Is complex thumb surgery better than simple bone removal for thumb arthritis?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004631.pub6
+  notes: |
+    Removing the thumb bone and adding ligament reconstruction doesn't work better than just removing the bone alone. Both surgeries seem to provide similar results for pain relief and function.
+  interest: 7
+  tags: ["arthritis", "bones-joints", "surgery", "myth-buster"]
+
+- question: "Do medications help treat PTSD symptoms?"
+  answer: "Yes, some do."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD002795.pub4
+  notes: |
+    SSRIs (a common type of antidepressant) showed moderate evidence of helping PTSD symptoms compared to placebo. Two other antidepressants, mirtazapine and amitriptyline, also showed some benefit, though the evidence was weaker.
+  interest: 6
+  tags: ["ptsd", "mental-health", "antidepressants"]
+
+- question: "Is it safe to avoid or stop taking steroids after a kidney transplant?"
+  answer: "Mostly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005632.pub4
+  notes: |
+    Avoiding or stopping steroids after kidney transplant doesn't seem to affect survival or how long the transplanted kidney lasts. Avoiding steroids early on may slightly increase rejection risk, but stopping them later appears safer and may reduce diabetes risk.
+  interest: 8
+  tags: ["kidney", "medication", "procedure"]
+
+- question: "Should premature babies be given medications to boost red blood cell production in their first week?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004863.pub7
+  notes: |
+    These medications probably reduce brain-related disabilities, serious gut problems, severe brain bleeding, and the need for blood transfusions in preterm babies. They don't appear to affect death rates or serious eye diseases.
+  interest: 6
+  tags: ["children", "medication", "prevention"]
+
+- question: "Should premature babies get platelet transfusions when their platelet counts are higher or lower?"
+  answer: "At lower levels."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015341.pub2
+  notes: |
+    Waiting until platelet counts are lower before giving transfusions reduces the number of transfusions needed without increasing the risk of death or bleeding in premature babies.
+  interest: 6
+  tags: ["procedure", "children"]
+
+- question: "Should I get immunotherapy along with chemotherapy if I have early triple-negative breast cancer?"
+  answer: "Yes, but only before surgery."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015072.pub3
+  notes: |
+    Adding immunotherapy to chemotherapy before surgery improves your chances of having no cancer detectable at surgery and reduces the risk of cancer returning. However, it likely increases serious side effects, and there's no benefit when given after surgery instead of before.
+  interest: 8
+  tags: ["cancer", "medication", "procedure"]
+
+- question: "Is it better to deliver early if you have high blood pressure during pregnancy?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009273.pub3
+  notes: |
+    Planned early delivery reduces complications for women with high blood pressure in pregnancy and likely reduces the risk of stillbirth. It doesn't increase the chance of needing a cesarean section or the baby needing special care.
+  interest: 8
+  tags: ["high-blood-pressure", "heart-disease", "procedure", "pregnancy", "childbirth"]
