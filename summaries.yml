@@ -11348,3 +11348,69 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Should blood donors take iron supplements to avoid being turned away for low iron?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009532.pub3
+  notes: |
+    Iron supplements can increase iron levels in the blood and help more people qualify to donate blood who might otherwise be deferred for low iron. However, iron tablets may cause stomach problems and other digestive issues, especially when you first start taking them.
+  interest: 7
+  tags: ["blood", "supplements", "prevention", "general-health"]
+
+- question: "How often should bedridden patients be repositioned to prevent bedsores?"
+  answer: "No clear answer."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009958.pub4
+  notes: |
+    There's no good evidence showing that any particular repositioning schedule or body position works better than others to prevent pressure sores. The research on this topic is still limited and most studies are small and poorly designed.
+  interest: 6
+  tags: ["wound-healing", "skin", "procedure", "elderly"]
+
+- question: "Do advanced sperm selection techniques improve IVF success rates?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010461.pub4
+  notes: |
+    One technique that selects sperm using hyaluronic acid probably reduces miscarriage risk slightly and may increase live birth rates compared to standard methods. However, evidence for other advanced techniques is very limited and more research is needed.
+  interest: 6
+  tags: ["procedure", "pregnancy"]
+
+- question: "Should children take vitamin B12 supplements?"
+  answer: "Yes, if they're deficient."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015264.pub2
+  notes: |
+    Vitamin B12 supplements effectively reduce the risk of vitamin B12 deficiency and improve B12 levels in children under 12. However, when combined with other vitamins, the additional benefit of B12 is unclear.
+  interest: 6
+  tags: ["supplements", "vitamins", "children"]
+
+- question: "Can breast cancer risk prediction models accurately estimate my risk if I have a family history of breast cancer?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013185.pub2
+  notes: |
+    The BOADICEA model was found to be one of the more reliable tools for women with a family history of breast cancer. However, researchers say that existing prediction models still need improvement to better distinguish between women who will and won't develop the disease.
+  interest: 8
+  tags: ["cancer", "screening", "prevention", "general-health"]
+
+- question: "Does Botox help with chronic neck pain?"
+  answer: "Yes, but barely."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008626.pub4
+  notes: |
+    Botox injections may provide a slight 6% improvement in neck pain short-term, but this doesn't last long-term. There's a 16% higher chance of mild side effects like soreness, muscle fatigue, or headaches lasting up to three weeks.
+  interest: 6
+  tags: ["chronic-pain", "neck-pain", "procedure", "general-health"]
+
+- question: "Do medications help treat PTSD symptoms?"
+  answer: "Yes, but only certain ones."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD002795.pub4
+  notes: |
+    SSRIs (a type of antidepressant) show moderate evidence of helping PTSD symptoms, while mirtazapine and amitriptyline show some benefit but with less certainty. Most other medication classes don't appear to help with PTSD symptoms.
+  interest: 7
+  tags: ["ptsd", "mental-health", "antidepressants", "medication"]
+
+- question: "Is more complex thumb surgery better than simple bone removal for thumb arthritis?"
+  answer: "No."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004631.pub6
+  notes: |
+    For thumb arthritis, removing the trapezium bone alone works about as well as the more complex procedure that also replaces ligaments and adds tendon reinforcement. Both surgeries provide similar pain relief and function improvement.
+  interest: 7
+  tags: ["arthritis", "bones-joints", "surgery", "myth-buster"]
