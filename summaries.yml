@@ -11348,3 +11348,53 @@
 
     '
   date: '2000-01-24'
+
+
+# New reviews added by automation
+- question: "Does telepharmacy help with managing your chronic health conditions?"
+  answer: "Partly, yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015136.pub2
+  notes: |
+    Telepharmacy (pharmacy services delivered by phone, video, or apps) may help you take medications as prescribed and can reduce blood pressure. However, it doesn't seem to improve blood sugar control, and effects on quality of life and healthcare costs are inconsistent.
+  interest: 6
+  tags: ["chronic-pain", "high-blood-pressure", "diabetes", "medication", "general-health"]
+
+- question: "Does blue light surgery work better than regular surgery for bladder cancer?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013776.pub3
+  notes: |
+    Blue light surgery may help prevent cancer from returning in people at medium and high risk, but doesn't seem to help those at low risk. It uses a special dye and blue light to make cancer cells glow red so surgeons can see and remove them more completely.
+  interest: 8
+  tags: ["cancer", "surgery", "procedure"]
+
+- question: "Should I take iron supplements if I donate blood regularly?"
+  answer: "Yes."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009532.pub3
+  notes: |
+    Iron supplements can help blood donors maintain healthy iron levels and reduce the chance of being turned away for low iron. However, iron tablets may cause stomach problems, especially when you first start taking them.
+  interest: 7
+  tags: ["supplements", "blood", "prevention", "general-health"]
+
+- question: "How often should bedridden people be repositioned to prevent bedsores?"
+  answer: "No clear answer."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009958.pub4
+  notes: |
+    There's no good evidence that any particular frequency of repositioning or specific position works better than others to prevent pressure sores. The research is still limited and most studies are small and poorly designed.
+  interest: 6
+  tags: ["wound-healing", "skin", "prevention", "elderly"]
+
+- question: "Should children take vitamin B12 supplements?"
+  answer: "Yes, in certain cases."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015264.pub2
+  notes: |
+    Vitamin B12 supplements reduce the risk of deficiency and improve B12 levels in children under 12, compared to no supplements. However, when B12 is added to other vitamin supplements, it doesn't make much difference compared to the same supplements without B12.
+  interest: 6
+  tags: ["vitamins", "supplements", "children"]
+
+- question: "Do advanced sperm selection techniques improve IVF success rates?"
+  answer: "Maybe."
+  url: https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010461.pub4
+  notes: |
+    One technique called HA-ICSI may slightly reduce miscarriage risk and possibly increase live birth rates compared to standard sperm selection. However, evidence for other advanced techniques is very limited and more research is needed.
+  interest: 6
+  tags: ["procedure", "pregnancy"]
